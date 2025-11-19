@@ -1,6 +1,7 @@
-# Odessa Website
+# Jett
+City of Odessa, Texas Municipal Website
 
-A modern, responsive website built with HTML, CSS, and JavaScript.
+A modern, responsive website built with HTML, CSS, and JavaScript for the City of Odessa, Texas.
 
 ## Project Structure
 

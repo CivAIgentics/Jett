@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="32" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#B22234"/>
+  <g>
+    <rect width="1200" height="48.4615" y="48.4615" fill="#fff"/>
+    <rect width="1200" height="48.4615" y="145.3846" fill="#fff"/>
+    <rect width="1200" height="48.4615" y="242.3077" fill="#fff"/>
+    <rect width="1200" height="48.4615" y="339.2308" fill="#fff"/>
+    <rect width="1200" height="48.4615" y="436.1538" fill="#fff"/>
+    <rect width="1200" height="48.4615" y="533.0769" fill="#fff"/>
+  </g>
+  <rect width="504" height="338.462" fill="#3C3B6E"/>
+  <g fill="#fff">
+    <g transform="translate(42,32)">
+      <polygon points="0,-5 1.5,-1.5 5,-1.5 2,-0.5 3,2 0,0.5 -3,2 -2,-0.5 -5,-1.5 -1.5,-1.5"/>
+    </g>
+    <g transform="translate(126,32)">
+      <polygon points="0,-5 1.5,-1.5 5,-1.5 2,-0.5 3,2 0,0.5 -3,2 -2,-0.5 -5,-1.5 -1.5,-1.5"/>
+    </g>
+    <g transform="translate(210,32)">
+      <polygon points="0,-5 1.5,-1.5 5,-1.5 2,-0.5 3,2 0,0.5 -3,2 -2,-0.5 -5,-1.5 -1.5,-1.5"/>
+    </g>
+    <g transform="translate(294,32)">
+      <polygon points="0,-5 1.5,-1.5 5,-1.5 2,-0.5 3,2 0,0.5 -3,2 -2,-0.5 -5,-1.5 -1.5,-1.5"/>
+    </g>
+    <g transform="translate(378,32)">
+      <polygon points="0,-5 1.5,-1.5 5,-1.5 2,-0.5 3,2 0,0.5 -3,2 -2,-0.5 -5,-1.5 -1.5,-1.5"/>
+    </g>
+    <g transform="translate(462,32)">
+      <polygon points="0,-5 1.5,-1.5 5,-1.5 2,-0.5 3,2 0,0.5 -3,2 -2,-0.5 -5,-1.5 -1.5,-1.5"/>
+    </g>
+  </g>
+</svg>

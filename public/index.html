@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jacky 3.0 - City of Midland AI Assistant powered by Dr. Steven Sierra Alcabes & CivAIgentics">
+    <title>Jacky 3.0 - City of Midland AI Assistant</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Lottie Player for JSON animations (LottieFiles webcomponent) -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div id="app-container">
+        <!-- Compact Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <img src="/icons/City of Midland Logo.png" alt="City of Midland Logo" class="city-logo city-logo-light">
+                <img src="/icons/City of Midland Logo (Dark Mode).png" alt="City of Midland Logo" class="city-logo city-logo-dark">
+                <div class="header-text">
+                    <h1 class="app-title" data-i18n="appTitle">Jacky 3.0</h1>
+                    <span class="app-subtitle" data-i18n="appSubtitle">City of Midland AI Assistant</span>
+                </div>
+            </div>
+            <div class="header-center">
+                <!-- Star Rating for Overall Conversation -->
+                <div id="star-rating-container" class="star-rating-container-header">
+                    <div class="star-rating-label-header" data-i18n="rateExperience">Rate your experience:</div>
+                    <div class="star-rating">
+                        <button class="star-rating-btn" data-rating="1" data-i18n-title="poor" title="Poor">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </button>
+                        <button class="star-rating-btn" data-rating="2" data-i18n-title="fair" title="Fair">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </button>
+                        <button class="star-rating-btn" data-rating="3" data-i18n-title="good" title="Good">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </button>
+                        <button class="star-rating-btn" data-rating="4" data-i18n-title="veryGood" title="Very Good">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </button>
+                        <button class="star-rating-btn" data-rating="5" data-i18n-title="excellent" title="Excellent">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="star-rating-feedback-header" data-i18n="valueFeedback">We value your feedback</div>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="dark-mode-toggle" class="dark-mode-toggle" title="Toggle Dark Mode / Cambiar Modo Oscuro">
+                    <div class="dark-mode-toggle-slider">
+                        <span id="dark-mode-icon">☀️</span>
+                    </div>
+                </button>
+                <button id="language-toggle" class="language-toggle" title="Switch Language / Cambiar Idioma">
+                    <img src="/icons/flag-usa.svg" alt="English" class="flag-icon">
+                    <img src="/icons/flag-mexico.svg" alt="Español" class="flag-icon">
+                </button>
+                <div class="status-indicator" id="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text" data-i18n="statusInitializing">Initializing...</span>
+                </div>
+                <!-- Small attribution - visible in compact header -->
+                <div class="powered-by" data-i18n="poweredBy">Powered by Dr. Steven Sierra Alcabes</div>
+            </div>
+        </header>
+
+        <!-- Full-Screen Main Content Area -->
+        <main class="main-content">
+            <!-- Left Panel: Avatar & Controls -->
+            <div class="left-panel">
+                <!-- ANAM Avatar Container -->
+                <div id="avatar-container" class="avatar-container">
+                    <!-- Idle background video (Visit Midland) shown when not in conversation -->
+                    <video id="idle-video" class="idle-video idle-video-visible" autoplay muted loop playsinline preload="auto">
+                        <source src="Visit Midland Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video id="anam-video" class="anam-video" autoplay playsinline></video>
+                    <div class="status-badge status-disconnected" id="status-badge"></div>
+                    
+                    <!-- Voice Waveform Visualization -->
+                    <div id="waveform-container" class="waveform-container hidden">
+                        <div class="waveform-bar"></div>
+                        <div class="waveform-bar"></div>
+                        <div class="waveform-bar"></div>
+                        <div class="waveform-bar"></div>
+                        <div class="waveform-bar"></div>
+                        <div class="waveform-bar"></div>
+                        <div class="waveform-bar"></div>
+                        <div class="waveform-bar"></div>
+                        <div class="waveform-bar"></div>
+                        <div class="waveform-bar"></div>
+                    </div>
+                    
+                    <div id="loading-overlay" class="loading-overlay hidden">
+                        <div class="spinner"></div>
+                        <p>Connecting to Jacky 2.0...</p>
+                    </div>
+                </div>
+
+                <!-- Conversation Controls -->
+                <div class="controls-container">
+                    <button id="start-btn" class="control-btn primary-btn">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                        <span data-i18n="startConversation">Start Conversation</span>
+                    </button>
+                    <button id="stop-btn" class="control-btn danger-btn hidden">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <rect x="9" y="9" width="6" height="6"></rect>
+                        </svg>
+                        <span data-i18n="endConversation">End Conversation</span>
+                    </button>
+                    <button id="mute-mic-btn" class="control-btn secondary-btn hidden" title="Mute your microphone">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                        <span data-i18n="muteMic">Mute Mic</span>
+                    </button>
+                    <button id="mute-agent-btn" class="control-btn secondary-btn hidden" title="Mute agent audio">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                        </svg>
+                        <span data-i18n="muteAgent">Mute Agent</span>
+                    </button>
+                    <button id="text-chat-btn" class="control-btn info-btn">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <span data-i18n="textChat">Text Chat</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Panel: Transcript & Cards -->
+            <div class="right-panel">
+                <!-- Transcript Display -->
+                <div id="transcript-container" class="transcript-container">
+                    <h3>
+                        <svg class="transcript-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+                        </svg>
+                        <span data-i18n="conversationTitle">Conversation</span>
+                    </h3>
+                    <div id="transcript" class="transcript">
+                        <div class="welcome-message">
+                            <div class="welcome-icon">👋</div>
+                            <h4 data-i18n="welcomeTitle">Welcome to Jacky 2.0!</h4>
+                            <p data-i18n="welcomeMessage">I'm your AI assistant for City of Midland services. Start a conversation to ask me anything about city services, utilities, permits, and more.</p>
+                            <p class="info-instruction" data-i18n="infoText">Click "Start Conversation" to speak with Jacky 2.0. Allow microphone access when prompted.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Default Service Cards (Always Visible) -->
+                <div id="service-cards" class="service-cards-container hidden">
+                    <h3 data-i18n="quickServices">Quick Links and Services</h3>
+                    <div class="service-cards-grid" id="default-cards-grid"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="error-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 data-i18n="errorTitle">Error</h3>
+                <button class="modal-close" id="close-error-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="error-message"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="control-btn" id="retry-btn"><span data-i18n="retry">Retry</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Multi-Tab Website Browser Overlay (Full Page) -->
+    <div id="browser-overlay" class="browser-overlay hidden">
+        <div class="browser-header">
+            <div class="browser-tabs" id="browser-tabs">
+                <!-- Tabs will be added dynamically -->
+            </div>
+            <div class="browser-controls">
+                <button id="browser-close-all-btn" class="browser-btn close-all-btn" title="Close All Tabs">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    <span>Close All</span>
+                </button>
+            </div>
+        </div>
+        <div class="browser-content" id="browser-content">
+            <!-- iframes will be added dynamically -->
+        </div>
+    </div>
+
+    <script src="/js/website-overlay.js"></script>
+    <script src="/js/particle-constellation.js"></script>
+    <script src="/js/cursor-reactive.js"></script>
+    <script src="/js/liquid-morphing.js"></script>
+    <script src="/js/cinematic-transitions.js"></script>
+    <script src="/js/pull-to-refresh.js"></script>
+    <script src="/js/ambient-voice.js"></script>
+    <script defer src="/vendor/anam.js"></script>
+    <script type="module" src="/js/app-anam-only.js"></script>
+</body>
+</html>

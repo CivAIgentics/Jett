@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  jacky-2.0:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - jacky-network
+
+networks:
+  jacky-network:
+    driver: bridge

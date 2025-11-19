@@ -7,13 +7,13 @@
 
 ## 🌐 Your Live Application
 
-**Production URL:** https://jacky-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app
+**Production URL:** https://Jett-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app
 
 ### Quick Links
-- **Main App:** https://jacky-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app
-- **Health Check:** https://jacky-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app/api/health
-- **Configuration:** https://jacky-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app/api/config
-- **Vercel Dashboard:** https://vercel.com/steven-sierra-alcabes-projects/jacky-2-0-anam-eleven-labs
+- **Main App:** https://Jett-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app
+- **Health Check:** https://Jett-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app/api/health
+- **Configuration:** https://Jett-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app/api/config
+- **Vercel Dashboard:** https://vercel.com/steven-sierra-alcabes-projects/Jett-2-0-anam-eleven-labs
 
 ---
 
@@ -31,9 +31,9 @@ All required environment variables are properly configured:
 
 ### Application Configuration
 - ✅ **NODE_ENV** - `production`
-- ✅ **APP_NAME** - `Jacky 2.0`
-- ✅ **CITY_NAME** - `City of Midland, Texas`
-- ✅ **ALLOWED_ORIGINS** - `https://midlandtexas.gov`
+- ✅ **APP_NAME** - `Jett`
+- ✅ **CITY_NAME** - `City of Odessa, Texas`
+- ✅ **ALLOWED_ORIGINS** - `https://Odessatexas.gov`
 - ✅ **ENABLE_LOGGING** - `true`
 - ✅ **ENABLE_ANALYTICS** - `false`
 
@@ -107,11 +107,11 @@ vercel deploy --prod
 
 ### View Logs
 ```bash
-vercel logs https://jacky-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app
+vercel logs https://Jett-2-0-anam-eleven-labs-dmhyd0ufy.vercel.app
 ```
 
 ### Rollback to Previous Deployment
-Go to: https://vercel.com/steven-sierra-alcabes-projects/jacky-2-0-anam-eleven-labs/deployments
+Go to: https://vercel.com/steven-sierra-alcabes-projects/Jett-2-0-anam-eleven-labs/deployments
 
 ---
 
@@ -121,13 +121,13 @@ Go to: https://vercel.com/steven-sierra-alcabes-projects/jacky-2-0-anam-eleven-l
 Visit your production URL and:
 - Click "Start Conversation"
 - Allow microphone access
-- Speak with Jacky 2.0
+- Speak with Jett
 - Try asking about city services
 - Verify service cards appear
 - Test language switching (🇺🇸/🇪🇸 button)
 
 ### 2. Add Custom Domain (Optional)
-If you want to use `jacky.midlandtexas.gov`:
+If you want to use `Jett.Odessatexas.gov`:
 1. Go to Vercel Project Settings → Domains
 2. Add your custom domain
 3. Configure DNS records as shown by Vercel
@@ -139,7 +139,7 @@ If you want to use `jacky.midlandtexas.gov`:
 - Review error logs if issues occur
 
 ### 4. Update CORS for Production
-If embedding on midlandtexas.gov, ensure:
+If embedding on Odessatexas.gov, ensure:
 - `ALLOWED_ORIGINS` includes the parent domain
 - Test iframe embedding works correctly
 
@@ -187,5 +187,5 @@ If embedding on midlandtexas.gov, ensure:
 ✅ **Production URL:** Live  
 ✅ **Environment Variables:** 11/11 Set  
 
-**Your Jacky 2.0 application is now live and fully functional!** 🎊
+**Your Jett application is now live and fully functional!** 🎊
 

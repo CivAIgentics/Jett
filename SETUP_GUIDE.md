@@ -1,4 +1,4 @@
-# Complete Setup Guide - Jacky 2.0
+# Complete Setup Guide - Jett
 
 ## Quick Start
 
@@ -65,9 +65,9 @@ ANAM_API_KEY=your_anam_api_key_here
 ANAM_PERSONA_ID=your_persona_id_here
 
 # Application Configuration
-ALLOWED_ORIGINS=https://midlandtexas.gov,http://localhost:3000
-APP_NAME=Jacky 2.0
-CITY_NAME=City of Midland, Texas
+ALLOWED_ORIGINS=https://Odessatexas.gov,http://localhost:3000
+APP_NAME=Jett
+CITY_NAME=City of Odessa, Texas
 
 # Session Configuration
 SESSION_TIMEOUT=1800000
@@ -103,7 +103,7 @@ Expected response:
 ```json
 {
   "status": "healthy",
-  "service": "Jacky 2.0",
+  "service": "Jett",
   "timestamp": "2025-11-06T..."
 }
 ```
@@ -117,8 +117,8 @@ curl http://localhost:3000/api/config
 Expected response:
 ```json
 {
-  "appName": "Jacky 2.0",
-  "cityName": "City of Midland, Texas",
+  "appName": "Jett",
+  "cityName": "City of Odessa, Texas",
   "anamPersonaId": "your_persona_id",
   "features": {
     "analytics": false,
@@ -164,7 +164,7 @@ Expected response:
 2. Click **"Start Conversation"**
 3. Allow microphone access when prompted
 4. The ANAM avatar should appear in the video element
-5. Start speaking - Jacky should respond
+5. Start speaking - Jett should respond
 
 ## Troubleshooting
 
@@ -223,14 +223,14 @@ ALLOWED_ORIGINS=https://yourdomain.com,https://www.yourdomain.com
 
 ```bash
 # Build the image
-docker build -t jacky-2.0 .
+docker build -t Jett-2.0 .
 
 # Run the container
 docker run -d \
-  --name jacky-2.0 \
+  --name Jett-2.0 \
   -p 3000:3000 \
   --env-file .env \
-  jacky-2.0
+  Jett-2.0
 ```
 
 ### Using Docker Compose

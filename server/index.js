@@ -317,7 +317,7 @@ app.post('/api/rating', async (req, res) => {
   }
 });
 
-// Proxy endpoint for midlandtexas.gov pages
+// Proxy endpoint for Odessatexas.gov pages
 app.get('/api/proxy', async (req, res) => {
   try {
     const targetUrl = req.query.url;

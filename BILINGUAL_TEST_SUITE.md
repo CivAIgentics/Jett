@@ -5,11 +5,11 @@
 
 ## 🎯 Test Instructions
 
-1. Open Jacky 3.0 in your browser: `http://localhost:3000` or `https://jacky-3-0.vercel.app`
+1. Open Jett in your browser: `http://localhost:3000` or `https://Jett-3-0.vercel.app`
 2. Enable microphone permissions
 3. Click the voice button to start ambient listening
 4. Speak the test commands below
-5. Verify that Jacky correctly identifies the intent and opens the appropriate service
+5. Verify that Jett correctly identifies the intent and opens the appropriate service
 
 ---
 
@@ -283,7 +283,7 @@ Test that filler words are correctly filtered:
 ## 📞 Support
 
 **Issues or Questions?**
-- GitHub Issues: github.com/CivAIgentics/Jacky-3.0/issues
+- GitHub Issues: github.com/CivAIgentics/Jett-3.0/issues
 - Email: ssierraalcabes@CivAIgentics.io
 - Documentation: BILINGUAL_SUPPORT.md
 

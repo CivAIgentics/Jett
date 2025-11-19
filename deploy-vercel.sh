@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # ═══════════════════════════════════════════════════════════════
-# Jacky 2.0 - Vercel Deployment Script
+# Jett - Vercel Deployment Script
 # ═══════════════════════════════════════════════════════════════
 
 set -e  # Exit on any error
 
-echo "🚀 Starting Vercel Deployment for Jacky 2.0"
+echo "🚀 Starting Vercel Deployment for Jett"
 echo "════════════════════════════════════════════"
 echo ""
 
@@ -76,9 +76,9 @@ vercel deploy --prod \
   -e ELEVENLABS_API_KEY="$ELEVENLABS_API_KEY" \
   -e ELEVENLABS_AGENT_ID="$ELEVENLABS_AGENT_ID" \
   -e NODE_ENV="production" \
-  -e ALLOWED_ORIGINS="${ALLOWED_ORIGINS:-https://midlandtexas.gov}" \
-  -e APP_NAME="${APP_NAME:-Jacky 2.0}" \
-  -e CITY_NAME="${CITY_NAME:-City of Midland, Texas}" \
+  -e ALLOWED_ORIGINS="${ALLOWED_ORIGINS:-https://Odessatexas.gov}" \
+  -e APP_NAME="${APP_NAME:-Jett}" \
+  -e CITY_NAME="${CITY_NAME:-City of Odessa, Texas}" \
   -e SESSION_TIMEOUT="${SESSION_TIMEOUT:-1800000}" \
   -e ENABLE_ANALYTICS="${ENABLE_ANALYTICS:-false}" \
   -e ENABLE_LOGGING="${ENABLE_LOGGING:-true}"

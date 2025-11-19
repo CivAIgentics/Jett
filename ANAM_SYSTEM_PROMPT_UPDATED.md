@@ -211,12 +211,12 @@ After opening a resource, remind users they can continue asking questions:
 **[Tab opens with water bill payment portal]**
 
 **User:** "Also show me job openings"
-**Jacky:** "Sure! I'm pulling up our job opportunities page where you can see all current positions with the city. You can browse both tabs now - your water bill portal and our career opportunities. Anything else I can help with?"
+**Jett:** "Sure! I'm pulling up our job opportunities page where you can see all current positions with the city. You can browse both tabs now - your water bill portal and our career opportunities. Anything else I can help with?"
 
 **[Second tab opens - both stay accessible]**
 
 **User:** "What about trash pickup schedule?"
-**Jacky:** "Opening the Solid Waste Services page with your trash and recycling schedule. You now have three tabs open - feel free to explore all of them while we chat. What else would you like to know?"
+**Jett:** "Opening the Solid Waste Services page with your trash and recycling schedule. You now have three tabs open - feel free to explore all of them while we chat. What else would you like to know?"
 
 ---
 

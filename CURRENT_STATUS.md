@@ -1,4 +1,4 @@
-# Jacky 2.0 - Current Status & Next Steps
+# Jett - Current Status & Next Steps
 
 ## ✅ What's Working
 
@@ -58,11 +58,11 @@
 
 ## 🎯 Current User Experience
 
-### How Citizens Use Jacky 2.0
+### How Citizens Use Jett
 
 1. Visit the application at http://localhost:3000
 2. See welcome screen with avatar icon
-3. Click "🎙️ Launch Jacky 2.0" button
+3. Click "🎙️ Launch Jett" button
 4. New window opens with ANAM avatar
 5. Allow microphone access when prompted
 6. Speak naturally to interact with the avatar
@@ -87,7 +87,7 @@ All documentation is complete:
 ### Immediate (High Priority)
 
 1. **Contact ANAM Support**
-   - Request iframe embedding for `midlandtexas.gov` domain
+   - Request iframe embedding for `Odessatexas.gov` domain
    - Ask about JavaScript SDK availability
    - Inquire about enterprise features
 
@@ -135,10 +135,10 @@ All documentation is complete:
 If iframe embedding remains blocked:
 
 ### Option A: Popup Modal
-Keep users on midlandtexas.gov but open ANAM in a centered popup window with controlled dimensions.
+Keep users on Odessatexas.gov but open ANAM in a centered popup window with controlled dimensions.
 
 ### Option B: Full Page Experience
-Dedicate a page on midlandtexas.gov that opens ANAM directly (no iframe needed).
+Dedicate a page on Odessatexas.gov that opens ANAM directly (no iframe needed).
 
 ### Option C: Alternative Avatar Provider
 Research other avatar providers that allow iframe embedding:
@@ -161,8 +161,8 @@ Build custom WebRTC integration with ElevenLabs directly (more complex but full 
 - Support: support@elevenlabs.io
 - Documentation: https://elevenlabs.io/docs
 
-**City of Midland IT**
-- Email: itsupport@midlandtexas.gov
+**City of Odessa IT**
+- Email: itsupport@Odessatexas.gov
 
 ## 🎉 Summary
 

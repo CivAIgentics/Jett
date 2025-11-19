@@ -8,7 +8,7 @@
 **Test Steps:**
 1. Refresh browser at http://localhost:3000
 2. Type: "I need help with water bill"
-3. Wait for Jacky's first response
+3. Wait for Jett's first response
 4. **Expected:** NO service cards should appear (it's the welcome message)
 5. Type another message: "Tell me about water billing"
 6. **Expected:** Service cards SHOULD appear now
@@ -24,13 +24,13 @@
 **What it does:** Converts URLs and emails in messages into clickable links
 
 **Test Messages:**
-1. Type: "Check out midlandtexas.gov for more info"
-   - **Expected:** "midlandtexas.gov" becomes a blue underlined clickable link
+1. Type: "Check out Odessatexas.gov for more info"
+   - **Expected:** "Odessatexas.gov" becomes a blue underlined clickable link
 
-2. Type: "Email support@midlandtexas.gov for help"
+2. Type: "Email support@Odessatexas.gov for help"
    - **Expected:** Email becomes a clickable mailto: link
 
-3. Wait for agent response with a URL (Jacky sometimes provides URLs)
+3. Wait for agent response with a URL (Jett sometimes provides URLs)
    - **Expected:** All URLs in agent messages are clickable
 
 **Visual Check:**
@@ -68,7 +68,7 @@
 **What it does:** Shows animated dots when agent is "thinking"
 
 **Test Steps:**
-1. Type any message: "Hello Jacky"
+1. Type any message: "Hello Jett"
 2. Press Enter
 3. **Expected:** Three animated dots appear in a gray bubble
 4. Wait for agent response

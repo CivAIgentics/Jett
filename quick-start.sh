@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Jacky 2.0 - Quick Start Script
+# Jett - Quick Start Script
 # This script helps you set up the project quickly
 
 set -e
 
 echo "╔══════════════════════════════════════════════════════════════╗"
-echo "║  Jacky 2.0 - ANAM AI + ElevenLabs Integration Setup        ║"
+echo "║  Jett - ANAM AI + ElevenLabs Integration Setup        ║"
 echo "╚══════════════════════════════════════════════════════════════╝"
 echo ""
 

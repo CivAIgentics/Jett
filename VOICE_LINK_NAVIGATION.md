@@ -1,12 +1,12 @@
 # Voice Link Navigation Feature
 
 ## Overview
-Jacky 3.0 now has the ability to open web links from service cards when users ask for them verbally. This creates a seamless experience where users can ask about a service and then immediately be taken to the relevant webpage.
+Jett now has the ability to open web links from service cards when users ask for them verbally. This creates a seamless experience where users can ask about a service and then immediately be taken to the relevant webpage.
 
 ## How It Works
 
 ### 1. **Service Cards Display**
-When Jacky mentions a service or answers a question, relevant service cards are automatically displayed with:
+When Jett mentions a service or answers a question, relevant service cards are automatically displayed with:
 - Service title
 - Description
 - Contact information (phone, email)
@@ -16,7 +16,7 @@ When Jacky mentions a service or answers a question, relevant service cards are 
 Users can open these links using voice commands in two ways:
 
 #### Method A: Direct Service Request
-User says specific service names, and Jacky opens the link:
+User says specific service names, and Jett opens the link:
 ```
 User: "Open water account"
 User: "Take me to trash service"
@@ -26,7 +26,7 @@ User: "Visit the police department"
 ```
 
 #### Method B: Contextual "Take Me There"
-After Jacky shows a service card, user can say:
+After Jett shows a service card, user can say:
 ```
 User: "Take me there"
 User: "Open that"
@@ -97,9 +97,9 @@ Each of 200+ service cards includes:
   titleEs: "Servicios de Agua",
   description: "Manage your water account and payments",
   descriptionEs: "Gestione su cuenta de agua y pagos",
-  url: "https://water.midlandtexas.gov",
+  url: "https://water.Odessatexas.gov",
   phone: "(432) 685-7270",
-  email: "cs@midlandtexas.gov",
+  email: "cs@Odessatexas.gov",
   keywords: ["water", "utility", "bill", "payment", "agua", "factura"]
 }
 ```
@@ -109,22 +109,22 @@ Each of 200+ service cards includes:
 ### Example 1: Direct Request
 ```
 User: "How do I pay my water bill?"
-Jacky: "You can pay your water bill online at the utility portal. I'm showing you the link now."
+Jett: "You can pay your water bill online at the utility portal. I'm showing you the link now."
 [Water Account card appears with link]
 User: "Take me there"
-✅ Opens: https://water.midlandtexas.gov
+✅ Opens: https://water.Odessatexas.gov
 ```
 
 ### Example 2: Service Navigation
 ```
 User: "Open animal shelter"
-✅ Opens: https://midlandtexas.gov/404/Animal-Services
+✅ Opens: https://Odessatexas.gov/404/Animal-Services
 ```
 
 ### Example 3: Multiple Cards
 ```
 User: "Tell me about parks"
-Jacky: "We have 29 neighborhood parks and 8 community parks..."
+Jett: "We have 29 neighborhood parks and 8 community parks..."
 [Parks & Recreation card appears]
 [Park Reservations card appears]
 User: "Open the first one"
@@ -133,7 +133,7 @@ User: "Open the first one"
 
 ## Supported Services
 
-All 200+ City of Midland services including:
+All 200+ City of Odessa services including:
 - **Utilities**: Water, trash, recycling
 - **Safety**: Police, fire, emergency alerts
 - **Recreation**: Parks, pools, golf, events
@@ -217,7 +217,7 @@ Potential improvements:
 ## Support
 
 For issues or questions:
-- GitHub: https://github.com/CivAIgentics/Jacky-3.0
+- GitHub: https://github.com/CivAIgentics/Jett-3.0
 - Email: Dr. Steven Sierra Alcabes
 
 ---

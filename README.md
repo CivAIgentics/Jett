@@ -51,12 +51,12 @@ Jett is a **cutting-edge municipal AI assistant** with true bilingual capabiliti
 - **One-Click Language Toggle** - Beautiful flag button (🇺🇸/🇲🇽) for instant language switching
 - **Native Accent Support** - Optimized for Mexican Spanish and American English
 - **Continuous Listening** - Ambient voice detection in both languages
-- **Wake Word Detection** - "Hey Jacky" / "Hola Jacky" triggers conversation
+- **Wake Word Detection** - "Hey Jett" / "Hola Jett" triggers conversation
 - **Natural Code-Switching** - Understands mixed-language conversations
 
 #### 🎯 **240+ Bilingual Keywords Across 12 Intent Categories**
 
-Jacky understands **citizen intent** in both languages with sophisticated natural language processing:
+Jett understands **citizen intent** in both languages with sophisticated natural language processing:
 
 | Intent Category | English Examples | Spanish Examples | Use Cases |
 |----------------|------------------|------------------|-----------|
@@ -75,7 +75,7 @@ Jacky understands **citizen intent** in both languages with sophisticated natura
 
 #### 🧠 **Semantic Understanding & Synonym Mapping**
 
-Jacky uses **intelligent synonym detection** to understand variations:
+Jett uses **intelligent synonym detection** to understand variations:
 
 **English → Spanish Mapping:**
 - "fix" / "arreglar" → repair, maintenance, service
@@ -110,11 +110,11 @@ Citizens can naturally **mix English and Spanish** in the same conversation:
 - **Smooth Animations** - 0.3s transitions on language switch
 - **Complete Translation** - All UI elements, buttons, labels, and messages
 - **Consistent Terminology** - Professionally translated municipal terms
-- **Voice Feedback** - Jacky confirms language changes verbally
+- **Voice Feedback** - Jett confirms language changes verbally
 
 ### 🎨 **IMPOSSIBLY FUTURISTIC UI** - The Future of Government Interfaces
 
-Jacky 2.0 doesn't just look modern—it looks **impossible**. Every pixel is crafted to deliver a sci-fi experience that makes citizens excited to engage with their city.
+Jett doesn't just look modern—it looks **impossible**. Every pixel is crafted to deliver a sci-fi experience that makes citizens excited to engage with their city.
 
 #### 🌌 **3D Particle Constellation System**
 - **80 Floating Geometric Shapes** with real physics simulation
@@ -130,7 +130,7 @@ Jacky 2.0 doesn't just look modern—it looks **impossible**. Every pixel is cra
 - **3 Dynamic Modes**: 
   - 💙 **Idle Mode** - Gentle blue pulsing when waiting
   - 💚 **User Speaking** - Green bars respond to microphone input
-  - 💜 **AI Speaking** - Purple bars sync with Jacky's voice
+  - 💜 **AI Speaking** - Purple bars sync with Jett's voice
 - **Glassmorphic Container** - 20px backdrop blur in pill shape
 - **Auto-Reset** - Returns to idle 2 seconds after speech
 - **Gradient Shadows** - Matching colors create depth and atmosphere
@@ -153,7 +153,7 @@ Jacky 2.0 doesn't just look modern—it looks **impossible**. Every pixel is cra
 - **Glass Cards** - Service cards with glass effect maintain readability
 
 #### 🎪 **Interactive Feedback Systems**
-- **Typing Indicator** - 5 individually animated glowing dots showing "Jacky is thinking..."
+- **Typing Indicator** - 5 individually animated glowing dots showing "Jett is thinking..."
 - **Enhanced Card Hover** - 8px lift + 3% scale + blue glow shadow + Lottie speed-up (1.8x)
 - **5-Star Celebration** - 150 confetti pieces + screen flash + shake + rotation animation
 - **Blue Metallic Shimmer** - Cards transform with shimmering blue-silver gradient on hover
@@ -165,7 +165,7 @@ Jacky 2.0 doesn't just look modern—it looks **impossible**. Every pixel is cra
 - **💬 External Text Chat** - Integrated Perplexity Space link for text-based conversations
 
 ### 🎬 **Dynamic Idle Background Video**
-- **Visit Midland Video** - Professional tourism video plays when avatar is idle
+- **Visit Odessa Video** - Professional tourism video plays when avatar is idle
 - **Muted & Looped** - Seamless continuous playback without audio
 - **Smooth Fade Transitions** - 1-second opacity transitions between video and avatar
 - **Auto-Show/Hide** - Video displays on load, hides during conversation, returns after
@@ -174,7 +174,7 @@ Jacky 2.0 doesn't just look modern—it looks **impossible**. Every pixel is cra
 ### 📱 **Complete Responsive Design** - Works Perfectly Everywhere
 
 #### 🔄 **35+ Breakpoint System**
-From 320px phones to 2400px+ ultra-wide monitors—Jacky adapts fluidly:
+From 320px phones to 2400px+ ultra-wide monitors—Jett adapts fluidly:
 - 📱 **320px-374px** - iPhone SE, small phones
 - 📱 **375px-479px** - iPhone 6/7/8, standard phones
 - 📱 **480px-767px** - Large phones, small tablets (landscape)
@@ -240,7 +240,7 @@ From 320px phones to 2400px+ ultra-wide monitors—Jacky adapts fluidly:
 **What Dr. Alcabes Can Do For Your Organization:**
 
 🏛️ **For Government Organizations:**
-- Implement AI-powered citizen engagement platforms (like Jacky 2.0)
+- Implement AI-powered citizen engagement platforms (like Jett)
 - Streamline processes through Lean Six Sigma methodologies
 - Develop leadership capacity at all levels of government
 - Create strategic plans with measurable outcomes
@@ -265,7 +265,7 @@ From 320px phones to 2400px+ ultra-wide monitors—Jacky adapts fluidly:
 
 ### 🌎 **COMPREHENSIVE BILINGUAL SUPPORT** - Breaking Language Barriers
 
-The flagship feature of Jacky 3.0! Complete English/Spanish dual-language system:
+The flagship feature of Jett! Complete English/Spanish dual-language system:
 
 #### Voice Recognition & Speech
 - **🗣️ Dual-Language Speech Recognition** - Seamlessly handles English ('en-US') and Spanish ('es-MX')
@@ -280,7 +280,7 @@ The flagship feature of Jacky 3.0! Complete English/Spanish dual-language system
 - **✨ Smooth Animations** - 0.3s transitions on all language changes
 - **📝 Complete Translation** - All UI elements, buttons, labels, and messages
 - **🎨 Professional Terminology** - Properly translated municipal and technical terms
-- **🔊 Voice Feedback** - Jacky confirms language changes verbally
+- **🔊 Voice Feedback** - Jett confirms language changes verbally
 
 #### Intent Detection System
 - **💳 Payment Intents** - "pay bill" / "pagar factura"
@@ -316,7 +316,7 @@ The flagship feature of Jacky 3.0! Complete English/Spanish dual-language system
 - **✨ Glassmorphism Effects** - Frosted glass UI with backdrop blur on all cards, panels, and buttons
 - **🌟 Floating Glow Orbs** - Radial gradients that pulse and scale across the background
 - **💎 Glass Cards** - Semi-transparent cards with 10-20px backdrop blur for premium iOS/macOS aesthetic
-- **🎪 Typing Indicator** - "Jacky is thinking..." with 5 animated glowing dots during AI processing
+- **🎪 Typing Indicator** - "Jett is thinking..." with 5 animated glowing dots during AI processing
 - **🚀 Enhanced Card Hovers** - Cards lift 8px with 3% scale, blue shadow glow, and Lottie speed-up (1.8x)
 - **🎊 Spectacular 5-Star Celebration** - 150 confetti pieces with screen flash, shake, and bigger sizes
 
@@ -371,7 +371,7 @@ The flagship feature of Jacky 3.0! Complete English/Spanish dual-language system
 
 > *Enterprise-grade bilingual AI assistant solution by CivAIgentics*
 
-**Developed by Dr. Steven Sierra Alcabes** - Jacky 3.0 represents the cutting edge of municipal AI technology, combining sophisticated avatar technology with natural language processing and comprehensive bilingual support to create an unprecedented citizen engagement experience for both English and Spanish-speaking communities.
+**Developed by Dr. Steven Sierra Alcabes** - Jett represents the cutting edge of municipal AI technology, combining sophisticated avatar technology with natural language processing and comprehensive bilingual support to create an unprecedented citizen engagement experience for both English and Spanish-speaking communities.
 
 **Key Highlights:**
 - 🌎 **Bilingual Excellence** - First municipal AI with comprehensive English/Spanish support
@@ -395,8 +395,8 @@ The flagship feature of Jacky 3.0! Complete English/Spanish dual-language system
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/CivAIgentics/Jacky-2.0-ANAM-ElevenLabs-.git
-cd Jacky-2.0-ANAM-ElevenLabs-
+git clone https://github.com/CivAIgentics/Jett-2.0-ANAM-ElevenLabs-.git
+cd Jett-2.0-ANAM-ElevenLabs-
 
 # 2. Run the quick start script
 chmod +x quick-start.sh
@@ -519,7 +519,7 @@ Quick access to essential city services in prioritized order:
 - 🐕 **Adopt an Animal** - Pet adoption services
 - 🐾 **Animals in Shelter** - View shelter animals
 - 🎉 **Community Events** - Upcoming events and programs
-- � **Vision Midland** - Our City's Future
+- � **Vision Odessa** - Our City's Future
 - 👮 **Police Non-Emergency** - File police reports
 - 💼 **Job Opportunities** - City employment
 - 📄 **Public Records** - Access documents
@@ -554,19 +554,19 @@ Quick access to essential city services in prioritized order:
 
 ## 🌎 Bilingual Support (English/Spanish)
 
-Jacky 3.0 provides **comprehensive bilingual support** for both English and Spanish speakers, ensuring inclusivity for Midland's diverse community.
+Jett provides **comprehensive bilingual support** for both English and Spanish speakers, ensuring inclusivity for Odessa's diverse community.
 
 ### Voice Recognition & Commands
 
 **English Commands:**
-- "Talk to Jacky" - Start conversation
+- "Talk to Jett" - Start conversation
 - "Open [service]" - Open specific service
 - "Show me [department]" - Navigate to department
 - "Dark mode" / "Toggle theme" - Change UI theme
 - "Change language" - Switch language
 
 **Spanish Commands:**
-- "Hablar con Jacky" - Comenzar conversación
+- "Hablar con Jett" - Comenzar conversación
 - "Abrir [servicio]" - Abrir servicio específico
 - "Muestra [departamento]" - Navegar a departamento
 - "Modo oscuro" / "Cambiar tema" - Cambiar tema de UI
@@ -574,7 +574,7 @@ Jacky 3.0 provides **comprehensive bilingual support** for both English and Span
 
 ### 12 Intent Categories
 
-Jacky understands user **intent** in both languages:
+Jett understands user **intent** in both languages:
 
 | Intent | English Keywords | Spanish Keywords |
 |--------|------------------|------------------|
@@ -593,7 +593,7 @@ Jacky understands user **intent** in both languages:
 
 ### Semantic Understanding
 
-**Synonym Mapping** - Jacky understands related terms:
+**Synonym Mapping** - Jett understands related terms:
 - "fix" / "arreglar" → repair, maintenance
 - "trash" / "basura" → garbage, waste, recycling
 - "light" / "luz" → streetlight, illumination
@@ -609,7 +609,7 @@ Jacky understands user **intent** in both languages:
 
 ### Stopword Filtering
 
-Jacky removes **100+ filler words** (50 English + 50 Spanish) for cleaner matching:
+Jett removes **100+ filler words** (50 English + 50 Spanish) for cleaner matching:
 - English: the, a, an, want, need, can, should...
 - Spanish: el, la, un, quiero, necesito, puede, debería...
 
@@ -708,8 +708,8 @@ npm start
 
 ```bash
 # On your server
-git clone https://github.com/CivAIgentics/Jacky-2.0-ANAM-ElevenLabs-.git
-cd Jacky-2.0-ANAM-ElevenLabs-
+git clone https://github.com/CivAIgentics/Jett-2.0-ANAM-ElevenLabs-.git
+cd Jett-2.0-ANAM-ElevenLabs-
 npm install --production
 
 # Configure environment
@@ -717,7 +717,7 @@ nano .env
 
 # Use PM2 for process management
 npm install -g pm2
-pm2 start server/index.js --name jacky-2.0
+pm2 start server/index.js --name Jett-2.0
 pm2 save
 pm2 startup
 ```
@@ -862,7 +862,7 @@ For municipalities requiring advanced customization, branding, or integration se
 - [x] **💥 Cinematic screen effects** - Shake, flash, vignette, chromatic aberration
 - [x] **Glassmorphism UI design** - Frosted glass with 10-20px backdrop blur
 - [x] **Animated gradient background** - 5-color shifting gradient with floating glow orbs
-- [x] **Typing indicator** - Glowing animated dots showing "Jacky is thinking..."
+- [x] **Typing indicator** - Glowing animated dots showing "Jett is thinking..."
 - [x] **Enhanced card hover effects** - 8px lift, 3% scale, Lottie speed-up (1.8x)
 - [x] **Spectacular 5-star celebration** - 150 confetti pieces with screen flash
 - [x] Blue metallic hover effects with shimmering gradients
@@ -880,7 +880,7 @@ For municipalities requiring advanced customization, branding, or integration se
 - [x] Star rating hover effects with uniform coloring
 - [x] Gradient scroll indicators on mobile
 - [x] Production deployment on Vercel with auto-deploy
-- [x] **🗣️ Voice Commands** - "Hey Jacky" wake word and continuous ambient listening
+- [x] **🗣️ Voice Commands** - "Hey Jett" wake word and continuous ambient listening
 - [x] **🎙️ Ambient Voice Recognition** - Always-on voice detection in both languages
 
 ### 🚧 In Progress (Version 3.1)
@@ -895,14 +895,14 @@ For municipalities requiring advanced customization, branding, or integration se
 - [ ] **📜 Advanced scroll effects** - Parallax depth, 3D perspective shifts
 
 ### 🎯 Future Enhancements (Version 4.0+)
-- [ ] **🗣️ Enhanced Voice Navigation** - "Hey Jacky, open permits and show requirements" complex multi-step commands
+- [ ] **🗣️ Enhanced Voice Navigation** - "Hey Jett, open permits and show requirements" complex multi-step commands
 - [ ] **🧠 AI Intelligence Indicators** - Show confidence levels and processing stages
 - [ ] **🎨 Custom Themes** - Ocean, Sunset, Forest, Midnight color palettes
 - [ ] **📱 Mobile App** - Native iOS and Android applications
 - [ ] **🖥️ Screen Sharing** - Guide citizens through website navigation
-- [ ] **📄 File Upload** - Submit documents directly through Jacky
+- [ ] **📄 File Upload** - Submit documents directly through Jett
 - [ ] **👨‍💼 Live Chat Escalation** - Connect to human agents when needed
-- [ ] **📅 Appointment Scheduling** - Book services directly through Jacky
+- [ ] **📅 Appointment Scheduling** - Book services directly through Jett
 - [ ] **💳 Payment Integration** - Pay bills and fees through the interface
 - [ ] **🔍 Advanced Search** - Semantic search across all city content
 - [ ] **🎙️ Offline Voice Recognition** - Work without internet connection
@@ -970,7 +970,7 @@ We offer a **complimentary 1-hour discovery call** to:
 ### 1️⃣ **Technology & AI Solutions**
 
 #### 🤖 **AI Implementation Services**
-- **Custom AI Assistant Development** - Like Jacky 2.0, tailored to your needs
+- **Custom AI Assistant Development** - Like Jett, tailored to your needs
 - **Avatar Technology Integration** - ANAM, D-ID, Synthesia, or custom solutions
 - **Conversational AI Setup** - ElevenLabs, OpenAI, or Google Dialogflow
 - **Knowledge Base Development** - Train AI on your specific content
@@ -1166,7 +1166,7 @@ We offer a **complimentary 1-hour discovery call** to:
 
 ### 🌟 **Professional Implementation by CivAIgentics**
 
-While Jacky 2.0 is open-source and can be self-hosted, **CivAIgentics offers comprehensive professional services** for organizations that want:
+While Jett is open-source and can be self-hosted, **CivAIgentics offers comprehensive professional services** for organizations that want:
 
 ✅ **White-Label Customization** - Complete branding to match your organization  
 ✅ **Enterprise Integration** - Connect with existing systems and databases  
@@ -1189,9 +1189,9 @@ While Jacky 2.0 is open-source and can be self-hosted, **CivAIgentics offers com
 
 For technical issues, bug reports, and feature requests:
 
-- **Repository**: [GitHub](https://github.com/CivAIgentics/Jacky-2.0-ANAM-ElevenLabs-)
-- **Issues**: [Report a bug](https://github.com/CivAIgentics/Jacky-2.0-ANAM-ElevenLabs-/issues)
-- **Discussions**: [Community Forum](https://github.com/CivAIgentics/Jacky-2.0-ANAM-ElevenLabs-/discussions)
+- **Repository**: [GitHub](https://github.com/CivAIgentics/Jett-2.0-ANAM-ElevenLabs-)
+- **Issues**: [Report a bug](https://github.com/CivAIgentics/Jett-2.0-ANAM-ElevenLabs-/issues)
+- **Discussions**: [Community Forum](https://github.com/CivAIgentics/Jett-2.0-ANAM-ElevenLabs-/discussions)
 - **Pull Requests**: Contributions welcome!
 
 ---
@@ -1215,7 +1215,7 @@ His unique combination of technical prowess and organizational development exper
 ### Technology Partners
 - **ANAM AI** - Lifelike avatar technology
 - **ElevenLabs** - Conversational AI and voice synthesis
-- **City of Midland** - Initial deployment partner
+- **City of Odessa** - Initial deployment partner
 
 ### Special Thanks
 To all the municipalities and organizations that trust CIVAIGENTICS, LLC to guide their digital transformation journey.
@@ -1226,7 +1226,7 @@ To all the municipalities and organizations that trust CIVAIGENTICS, LLC to guid
 
 ### ⚠️ **IMPORTANT: This is Proprietary Software**
 
-**Jacky 2.0 is NOT open source.** All use requires a valid commercial license from CIVAIGENTICS, LLC.
+**Jett is NOT open source.** All use requires a valid commercial license from CIVAIGENTICS, LLC.
 
 ### For Evaluation Access:
 Contact **Dr. Steven Sierra Alcabes** for a 30-day evaluation license:
@@ -1566,7 +1566,7 @@ nano .env
 
 # Use PM2 for process management
 npm install -g pm2
-pm2 start server/index.js --name jacky-2.0
+pm2 start server/index.js --name Jett-2.0
 pm2 save
 pm2 startup
 ```
@@ -1586,8 +1586,8 @@ CMD ["npm", "start"]
 
 ```bash
 # Build and run
-docker build -t jacky-2.0 .
-docker run -p 3000:3000 --env-file .env jacky-2.0
+docker build -t Jett-2.0 .
+docker run -p 3000:3000 --env-file .env Jett-2.0
 ```
 
 #### Option 3: Platform as a Service
@@ -1641,7 +1641,7 @@ Add this code to your website where you want Your City Avatar to appear:
 
 ```html
 <style>
-    .jacky-container {
+    .Jett-container {
         position: relative;
         width: 100%;
         max-width: 1200px;
@@ -1650,7 +1650,7 @@ Add this code to your website where you want Your City Avatar to appear:
         height: 0;
         overflow: hidden;
     }
-    .jacky-container iframe {
+    .Jett-container iframe {
         position: absolute;
         top: 0;
         left: 0;
@@ -1662,7 +1662,7 @@ Add this code to your website where you want Your City Avatar to appear:
     }
 </style>
 
-<div class="jacky-container">
+<div class="Jett-container">
     <iframe 
         src="https://avatar.yourcity.gov" 
         allow="microphone; camera; autoplay">
@@ -1673,7 +1673,7 @@ Add this code to your website where you want Your City Avatar to appear:
 ### Method 3: Modal/Popup Integration
 
 ```html
-<button id="launch-jacky" style="
+<button id="launch-Jett" style="
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -1690,7 +1690,7 @@ Add this code to your website where you want Your City Avatar to appear:
     💬 Chat with Your City Avatar
 </button>
 
-<div id="jacky-modal" style="
+<div id="Jett-modal" style="
     display: none;
     position: fixed;
     top: 0;
@@ -1708,7 +1708,7 @@ Add this code to your website where you want Your City Avatar to appear:
         border-radius: 12px;
         overflow: hidden;
         position: relative;">
-        <button id="close-jacky" style="
+        <button id="close-Jett" style="
             position: absolute;
             top: 10px;
             right: 10px;
@@ -1734,11 +1734,11 @@ Add this code to your website where you want Your City Avatar to appear:
 </div>
 
 <script>
-    document.getElementById('launch-jacky').addEventListener('click', function() {
-        document.getElementById('jacky-modal').style.display = 'block';
+    document.getElementById('launch-Jett').addEventListener('click', function() {
+        document.getElementById('Jett-modal').style.display = 'block';
     });
-    document.getElementById('close-jacky').addEventListener('click', function() {
-        document.getElementById('jacky-modal').style.display = 'none';
+    document.getElementById('close-Jett').addEventListener('click', function() {
+        document.getElementById('Jett-modal').style.display = 'none';
     });
 </script>
 ```
@@ -1893,7 +1893,7 @@ CEO & Founder, CIVAIGENTICS, LLC
 ### **Technology Partners:**
 - **ANAM AI** - Avatar technology platform
 - **ElevenLabs** - Conversational AI integration
-- **City of Midland** - Initial deployment partner
+- **City of Odessa** - Initial deployment partner
 
 ### **Intellectual Property Notice:**
 All design elements, user interface patterns, animations, visual effects, and code architecture are the proprietary intellectual property of CIVAIGENTICS, LLC.

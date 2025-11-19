@@ -1,5 +1,5 @@
 /**
- * Simple API Test Suite for Jacky 2.0
+ * Simple API Test Suite for Jett
  * Run with: npm test
  */
 
@@ -63,7 +63,7 @@ async function testHealthEndpoint() {
     const response = await makeRequest('/api/health');
     assert(response.statusCode === 200, 'Health endpoint returns 200 OK');
     assert(response.body.status === 'healthy', 'Health status is "healthy"');
-    assert(response.body.service === 'Jacky 2.0', 'Service name is correct');
+    assert(response.body.service === 'Jett', 'Service name is correct');
     assert(response.body.timestamp !== undefined, 'Timestamp is present');
   } catch (error) {
     console.log(`${colors.red}✗${colors.reset} Health endpoint failed: ${error.message}`);
@@ -116,7 +116,7 @@ async function testAnamSession() {
 
 async function runTests() {
   console.log(`${colors.blue}═══════════════════════════════════════${colors.reset}`);
-  console.log(`${colors.blue}  Jacky 2.0 API Test Suite${colors.reset}`);
+  console.log(`${colors.blue}  Jett API Test Suite${colors.reset}`);
   console.log(`${colors.blue}═══════════════════════════════════════${colors.reset}\n`);
   
   await new Promise(resolve => setTimeout(resolve, 500));

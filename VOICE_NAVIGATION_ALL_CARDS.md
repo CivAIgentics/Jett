@@ -69,12 +69,12 @@ Already had dynamic search implemented - no changes needed.
 
 #### Simple Cards (21):
 - phone-directory, permits, report, water, alerts, meetings
-- adopt-animal, animals-shelter, community-events, vision-midland
+- adopt-animal, animals-shelter, community-events, vision-Odessa
 - police-non-emergency, jobs, records, trash, court, bids
 - facebook, twitter, instagram, youtube, linkedin
 
 #### Comprehensive Cards (135):
-- mayorCouncil, cityLeadership, permitMidland, developmentServices
+- mayorCouncil, cityLeadership, permitOdessa, developmentServices
 - animalServices, fireDepartment, policeServices, libraryServices
 - parksRecreation, waterUtilities, solidWaste, publicWorks
 - economicDevelopment, humanResources, informationTechnology

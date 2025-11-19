@@ -1,7 +1,7 @@
-# Jacky 3.0 Migration Summary
+# Jett Migration Summary
 
 ## Overview
-Successfully migrated Jacky 2.0 to **Jacky 3.0** with ANAM-only integration. This version removes the ElevenLabs dependency and uses ANAM AI exclusively for both conversational AI and avatar visualization.
+Successfully migrated Jett to **Jett** with ANAM-only integration. This version removes the ElevenLabs dependency and uses ANAM AI exclusively for both conversational AI and avatar visualization.
 
 ## What Changed
 
@@ -16,10 +16,10 @@ Successfully migrated Jacky 2.0 to **Jacky 3.0** with ANAM-only integration. Thi
 #### New Files
 - `public/js/app-anam-only.js` - New ANAM-only JavaScript application
 - `.env` - Environment configuration with ANAM persona ID
-- `JACKY_3_ANAM_ONLY_GUIDE.md` - Complete setup and usage guide
+- `Jett_3_ANAM_ONLY_GUIDE.md` - Complete setup and usage guide
 
 #### Modified Files
-- `public/index.html` - Updated to use Jacky 3.0 and app-anam-only.js
+- `public/index.html` - Updated to use Jett and app-anam-only.js
 - `package.json` - Updated version to 3.0.0 and description
 
 ### 3. Environment Variables
@@ -62,11 +62,11 @@ ANAM_PERSONA_ID=ef1b0530-5288-4505-bde1-8cc72fb09904
 4. **Commit Changes**:
    ```bash
    git add .
-   git commit -m "Upgrade to Jacky 3.0 - ANAM-only integration with persona ef1b0530-5288-4505-bde1-8cc72fb09904"
+   git commit -m "Upgrade to Jett - ANAM-only integration with persona ef1b0530-5288-4505-bde1-8cc72fb09904"
    git push origin main
    ```
 
-## Benefits of Jacky 3.0
+## Benefits of Jett
 
 ### Simplified Architecture
 - Single platform for avatar + conversation
@@ -85,7 +85,7 @@ ANAM_PERSONA_ID=ef1b0530-5288-4505-bde1-8cc72fb09904
 
 ## ANAM Features
 
-Jacky 3.0 leverages ANAM's full capabilities:
+Jett leverages ANAM's full capabilities:
 - ✅ Speech recognition (STT)
 - ✅ Natural language understanding (NLU)
 - ✅ Conversational AI responses
@@ -99,11 +99,11 @@ Jacky 3.0 leverages ANAM's full capabilities:
 1. **Server-Side Session Creation**: The server creates ANAM session tokens securely using the API key
 2. **Persona Configuration**: The persona ID is hardcoded in the client for consistency
 3. **Backwards Compatibility**: The UI and features remain the same for users
-4. **Migration Path**: Can easily revert to Jacky 2.0 by switching the script back to `app-elevenlabs-anam.js`
+4. **Migration Path**: Can easily revert to Jett by switching the script back to `app-elevenlabs-anam.js`
 
 ## Documentation
 
-- Full setup guide: `JACKY_3_ANAM_ONLY_GUIDE.md`
+- Full setup guide: `Jett_3_ANAM_ONLY_GUIDE.md`
 - ANAM Docs: https://docs.anam.ai
 - Support: Open GitHub issue or contact CivAIgentics
 

@@ -1,11 +1,11 @@
 # 🌎 Bilingual Support - English/Spanish
-## Jacky 3.0 Comprehensive Language Features
+## Jett Comprehensive Language Features
 
 ---
 
 ## 🎯 Overview
 
-Jacky 3.0 now fully supports **bilingual voice commands and intent detection** for both **English** and **Spanish** speakers in Midland, Texas! This enhancement ensures that all residents can interact with Jacky naturally in their preferred language.
+Jett now fully supports **bilingual voice commands and intent detection** for both **English** and **Spanish** speakers in Odessa, Texas! This enhancement ensures that all residents can interact with Jett naturally in their preferred language.
 
 ---
 
@@ -15,14 +15,14 @@ Jacky 3.0 now fully supports **bilingual voice commands and intent detection** f
 
 | English | Spanish |
 |---------|---------|
-| "Talk to Jacky" | "Hablar con Jacky" |
+| "Talk to Jett" | "Hablar con Jett" |
 | "Start conversation" | "Comenzar conversación" |
-| "Speak to Jacky" | "Platicar con Jacky" |
-| "Chat with Jacky" | "Chatear con Jacky" |
+| "Speak to Jett" | "Platicar con Jett" |
+| "Chat with Jett" | "Chatear con Jett" |
 
 **Example:**
-- 🇺🇸 "Hey Jacky, start conversation"
-- 🇲🇽 "Hey Jacky, comenzar conversación"
+- 🇺🇸 "Hey Jett, start conversation"
+- 🇲🇽 "Hey Jett, comenzar conversación"
 
 ---
 
@@ -55,7 +55,7 @@ Jacky 3.0 now fully supports **bilingual voice commands and intent detection** f
 
 ## 🧠 Intent Detection (12 Categories)
 
-Jacky understands **intent** in both languages across 12 categories:
+Jett understands **intent** in both languages across 12 categories:
 
 ### 1. **Payment / Pago**
 **English Keywords:** pay, payment, bill, billing, invoice, charge, fee, cost, money, owe  
@@ -179,7 +179,7 @@ Jacky understands **intent** in both languages across 12 categories:
 
 ## 📚 Semantic Similarity & Synonyms
 
-Jacky understands **synonyms** and related terms in both languages:
+Jett understands **synonyms** and related terms in both languages:
 
 ### English ↔ Spanish Mappings
 
@@ -203,7 +203,7 @@ Jacky understands **synonyms** and related terms in both languages:
 
 ## 🎯 Context-Aware Phrases
 
-Jacky recognizes **full phrases** for better accuracy:
+Jett recognizes **full phrases** for better accuracy:
 
 ### English Phrases
 
@@ -238,7 +238,7 @@ Jacky recognizes **full phrases** for better accuracy:
 
 ## 🚫 Stopword Filtering
 
-Jacky automatically removes **filler words** in both languages for cleaner matching:
+Jett automatically removes **filler words** in both languages for cleaner matching:
 
 ### English Stopwords (50+)
 the, a, an, and, or, but, in, on, at, to, for, of, with, by, from, up, about, into, through, during, I, me, my, we, us, our, you, your, can, could, would, should, will, want, need, like, have, has, had, is, am, are, was, were, be, been, being, do, does, did, doing, this, that, these, those, some, any
@@ -255,14 +255,14 @@ el, la, los, las, un, una, unos, unas, y, o, pero, en, de, del, al, con, por, pa
 **English:**
 ```
 User: "I need to pay my water bill"
-Jacky: 🧠 Intent: payment, utility
+Jett: 🧠 Intent: payment, utility
        Opens: Utility Billing Portal
 ```
 
 **Spanish:**
 ```
 User: "Necesito pagar mi factura de agua"
-Jacky: 🧠 Intent: payment, utility
+Jett: 🧠 Intent: payment, utility
        Opens: Portal de Facturación
 ```
 
@@ -273,14 +273,14 @@ Jacky: 🧠 Intent: payment, utility
 **English:**
 ```
 User: "Report a broken streetlight on Main Street"
-Jacky: 🧠 Intent: report, utility
+Jett: 🧠 Intent: report, utility
        Opens: Public Works Report System
 ```
 
 **Spanish:**
 ```
 User: "Reportar una luz de calle rota en la calle Main"
-Jacky: 🧠 Intent: report, utility
+Jett: 🧠 Intent: report, utility
        Opens: Sistema de Reportes de Obras Públicas
 ```
 
@@ -291,14 +291,14 @@ Jacky: 🧠 Intent: report, utility
 **English:**
 ```
 User: "Apply for building permit"
-Jacky: 🧠 Intent: application, permit
+Jett: 🧠 Intent: application, permit
        Opens: Development Services Portal
 ```
 
 **Spanish:**
 ```
 User: "Aplicar para permiso de construcción"
-Jacky: 🧠 Intent: application, permit
+Jett: 🧠 Intent: application, permit
        Opens: Portal de Servicios de Desarrollo
 ```
 
@@ -309,14 +309,14 @@ Jacky: 🧠 Intent: application, permit
 **English:**
 ```
 User: "Show me job opportunities"
-Jacky: 🧠 Intent: job, information
+Jett: 🧠 Intent: job, information
        Opens: Career Opportunities Page
 ```
 
 **Spanish:**
 ```
 User: "Muéstrame oportunidades de trabajo"
-Jacky: 🧠 Intent: job, information
+Jett: 🧠 Intent: job, information
        Opens: Página de Oportunidades de Carrera
 ```
 
@@ -327,14 +327,14 @@ Jacky: 🧠 Intent: job, information
 **English:**
 ```
 User: "I want to adopt a dog"
-Jacky: 🧠 Intent: application, event
+Jett: 🧠 Intent: application, event
        Opens: Animal Services - Adoption
 ```
 
 **Spanish:**
 ```
 User: "Quiero adoptar un perro"
-Jacky: 🧠 Intent: application, event
+Jett: 🧠 Intent: application, event
        Opens: Servicios de Animales - Adopción
 ```
 
@@ -364,7 +364,7 @@ Works with various Spanish accents (Mexican, Central American, etc.)
 
 ### 3. **Phonetic Variations**
 Handles speech-to-text variations:
-- "jacky" / "jackie" / "jaki"
+- "Jett" / "jackie" / "jaki"
 - "pagar" / "pajar" (common misrecognition)
 
 ### 4. **Cultural Context**
@@ -505,11 +505,11 @@ const contextPhrases = [
 
 ---
 
-## 🌍 Impact on Midland Community
+## 🌍 Impact on Odessa Community
 
 ### Demographics Served:
-- **English Speakers:** 70% of Midland residents
-- **Spanish Speakers:** 30% of Midland residents (growing)
+- **English Speakers:** 70% of Odessa residents
+- **Spanish Speakers:** 30% of Odessa residents (growing)
 - **Bilingual Residents:** Seamless experience in both languages
 
 ### Accessibility Improvements:
@@ -528,8 +528,8 @@ We're continuously improving bilingual support. If you encounter:
 - Better synonym mappings
 
 **Contact:** Dr. Steven Sierra Alcabes, Process Engineer Officer  
-**Email:** [City of Midland Contact]  
-**GitHub:** github.com/CivAIgentics/Jacky-3.0
+**Email:** [City of Odessa Contact]  
+**GitHub:** github.com/CivAIgentics/Jett-3.0
 
 ---
 
@@ -545,9 +545,9 @@ We're continuously improving bilingual support. If you encounter:
 
 ---
 
-**¡Jacky 3.0 ahora habla español! 🎉**  
-**Jacky 3.0 now speaks Spanish! 🎉**
+**¡Jett ahora habla español! 🎉**  
+**Jett now speaks Spanish! 🎉**
 
 ---
 
-*Built with ❤️ for the City of Midland, Texas*
+*Built with ❤️ for the City of Odessa, Texas*

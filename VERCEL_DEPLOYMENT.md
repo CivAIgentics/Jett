@@ -1,15 +1,15 @@
-# 🚀 Vercel Deployment - Jacky 3.0
+# 🚀 Vercel Deployment - Jett
 
 ## ✅ Deployment Complete!
 
 ### Production URLs
-- **Primary**: https://jacky-3-0.vercel.app
-- **Latest**: https://jacky-3-0-863nm75zh-steven-sierra-alcabes-projects.vercel.app
+- **Primary**: https://Jett-3-0.vercel.app
+- **Latest**: https://Jett-3-0-863nm75zh-steven-sierra-alcabes-projects.vercel.app
 
 ### 📊 Deployment Details
-- **Project Name**: jacky-3-0
+- **Project Name**: Jett-3-0
 - **Organization**: CivAIgentics / steven-sierra-alcabes-projects
-- **Repository**: https://github.com/CivAIgentics/Jacky-3.0
+- **Repository**: https://github.com/CivAIgentics/Jett-3.0
 - **Branch**: main
 - **Environment**: Production
 
@@ -29,7 +29,7 @@ The project uses a custom `vercel.json` configuration:
 GitHub integration is enabled. Any push to the `main` branch will automatically trigger a new deployment.
 
 ### 📱 Features Available
-All Jacky 3.0 features are available in production:
+All Jett features are available in production:
 - ✅ ANAM AI conversation with avatar
 - ✅ Voice interaction (microphone + TTS)
 - ✅ Service cards display and detection
@@ -42,7 +42,7 @@ All Jacky 3.0 features are available in production:
 - ✅ Responsive design (mobile, tablet, desktop)
 
 ### 🔗 Vercel Dashboard
-- **Project**: https://vercel.com/steven-sierra-alcabes-projects/jacky-3-0
+- **Project**: https://vercel.com/steven-sierra-alcabes-projects/Jett-3-0
 - **Deployments**: View all deployments and logs
 - **Settings**: Manage environment variables, domains, etc.
 
@@ -80,7 +80,7 @@ vercel env rm <KEY_NAME> production
 
 ### 🎯 Testing the Deployment
 
-1. **Visit**: https://jacky-3-0.vercel.app
+1. **Visit**: https://Jett-3-0.vercel.app
 2. **Click**: "Start Conversation" button
 3. **Allow**: Microphone permissions when prompted
 4. **Speak**: Say something like "I need help with water service"
@@ -95,7 +95,7 @@ vercel env rm <KEY_NAME> production
 #### If conversation doesn't start:
 1. Check browser console for errors (F12)
 2. Verify microphone permissions are granted
-3. Check Vercel function logs: `vercel logs jacky-3-0.vercel.app`
+3. Check Vercel function logs: `vercel logs Jett-3-0.vercel.app`
 
 #### If ANAM session fails:
 1. Verify environment variables in Vercel dashboard
@@ -169,7 +169,7 @@ Or in Vercel dashboard:
 
 ### ✨ What's Next?
 
-1. **Test thoroughly**: https://jacky-3-0.vercel.app
+1. **Test thoroughly**: https://Jett-3-0.vercel.app
 2. **Monitor logs**: Check for any errors
 3. **Add custom domain** (optional): If you want a branded URL
 4. **Set up analytics** (optional): Add Vercel Analytics
@@ -181,4 +181,4 @@ Or in Vercel dashboard:
 **Deployed By**: CivAIgentics
 **Status**: ✅ Live and Operational
 
-**Production URL**: https://jacky-3-0.vercel.app
+**Production URL**: https://Jett-3-0.vercel.app

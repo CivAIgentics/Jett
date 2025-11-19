@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Jacky 2.0 Setup Script"
+echo "🚀 Jett Setup Script"
 echo "=========================="
 echo ""
 

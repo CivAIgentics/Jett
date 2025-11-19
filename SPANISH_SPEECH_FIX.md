@@ -34,7 +34,7 @@ The system now considers 5 alternative interpretations instead of 3 for better a
 ## How to Use
 
 ### **Option 1: Manual Language Toggle** (Recommended)
-1. Open Jacky 3.0
+1. Open Jett
 2. Look for the language button in the header: **🇲🇽 ES** or **🇺🇸 EN**
 3. Click to switch between Spanish and English
 4. The microphone will restart with the new language
@@ -190,9 +190,9 @@ Result: ✅ Correctly identifies Spanish words
 
 ### For Dr. Alcabes:
 
-1. **Open Jacky 3.0**
+1. **Open Jett**
    - Local: http://localhost:3000
-   - Live: https://jacky-3-0.vercel.app
+   - Live: https://Jett-3-0.vercel.app
 
 2. **Check Language Button**
    - Should see **🇲🇽 ES** in header (default is now Spanish)
@@ -240,7 +240,7 @@ Result: ✅ Correctly identifies Spanish words
 ✅ **Default Language:** Now Spanish (es-MX) instead of English (en-US)  
 ✅ **Toggle Button:** Easy switching between Spanish and English  
 ✅ **Better Accuracy:** 5 alternatives considered instead of 3  
-✅ **Deployed:** Live on Vercel at jacky-3-0.vercel.app  
+✅ **Deployed:** Live on Vercel at Jett-3-0.vercel.app  
 
 **Status:** Ready for testing! 🎉
 

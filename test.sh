@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Quick Test Script for Jacky 2.0 with ANAM + ElevenLabs
+# Quick Test Script for Jett with ANAM + ElevenLabs
 
 echo "==========================================="
-echo "  Jacky 2.0 - Quick Test Script"
+echo "  Jett - Quick Test Script"
 echo "  ANAM AI + ElevenLabs Integration"
 echo "==========================================="
 echo ""
@@ -55,7 +55,7 @@ if [ ! -d "node_modules" ]; then
 fi
 
 # Start the server
-echo "🚀 Starting Jacky 2.0 server..."
+echo "🚀 Starting Jett server..."
 echo ""
 echo "   📍 Server will run on: http://localhost:3000"
 echo "   🎯 Press Ctrl+C to stop"

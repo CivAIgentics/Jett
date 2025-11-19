@@ -1,4 +1,4 @@
-# ✅ Integration Complete - Jacky 2.0 with ANAM AI & ElevenLabs
+# ✅ Integration Complete - Jett with ANAM AI & ElevenLabs
 
 ## What Was Implemented
 
@@ -92,7 +92,7 @@ Open `http://localhost:3000` and click "Start Conversation"
 
 ```
 ═══════════════════════════════════════
-  Jacky 2.0 API Test Suite
+  Jett API Test Suite
 ═══════════════════════════════════════
 
 Testing Health Endpoint
@@ -163,14 +163,14 @@ Failed: 0
 ### GET `/api/health`
 Health check endpoint
 ```json
-{ "status": "healthy", "service": "Jacky 2.0" }
+{ "status": "healthy", "service": "Jett" }
 ```
 
 ### GET `/api/config`
 Frontend configuration
 ```json
 {
-  "appName": "Jacky 2.0",
+  "appName": "Jett",
   "anamPersonaId": "...",
   "features": { "analytics": false, "logging": true }
 }
@@ -192,8 +192,8 @@ Create ANAM avatar session
 
 ### Option 1: Docker
 ```bash
-docker build -t jacky-2.0 .
-docker run -p 3000:3000 --env-file .env jacky-2.0
+docker build -t Jett-2.0 .
+docker run -p 3000:3000 --env-file .env Jett-2.0
 ```
 
 ### Option 2: Docker Compose

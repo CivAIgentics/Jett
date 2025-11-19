@@ -198,7 +198,7 @@ class WebsiteBrowser {
         // Check if this URL should be proxied
         // Proxy all city-related sites including water subdomain
         const shouldProxy = (
-            url.includes('midlandtexas.gov') ||
+            url.includes('Odessatexas.gov') ||
             url.includes('flymaf.com') ||
             url.includes('civicplus.com')
         );
@@ -231,7 +231,7 @@ class WebsiteBrowser {
             <div class="browser-iframe-error" style="display: none;">
                 <div class="error-icon">🚫</div>
                 <h3>Unable to Load in Frame</h3>
-                <p class="error-message">This website cannot be displayed inside Jacky due to security restrictions.</p>
+                <p class="error-message">This website cannot be displayed inside Jett due to security restrictions.</p>
                 <p class="error-details" style="font-size: 0.85em; color: #888; margin-top: 8px;"></p>
             </div>
             <iframe 
@@ -274,7 +274,7 @@ class WebsiteBrowser {
                 tab.tabElement.classList.remove('loading');
             }
             
-            // Check if this was a proxied midlandtexas.gov URL
+            // Check if this was a proxied Odessatexas.gov URL
             const isProxied = iframe.src.includes('/api/proxy?url=');
             
             // Try to access iframe content to detect CSP violations
@@ -306,9 +306,9 @@ class WebsiteBrowser {
         });
 
         // Set a timeout to detect if iframe never loads (CSP block)
-        // Longer timeout for proxied midlandtexas.gov pages
-        const isProxiedMidland = iframeUrl.includes('/api/proxy?url=');
-        const timeoutDuration = isProxiedMidland ? 8000 : 3000; // 8s for proxied sites, 3s for others
+        // Longer timeout for proxied Odessatexas.gov pages
+        const isProxiedOdessa = iframeUrl.includes('/api/proxy?url=');
+        const timeoutDuration = isProxiedOdessa ? 8000 : 3000; // 8s for proxied sites, 3s for others
         
         loadTimeout = setTimeout(() => {
             if (!hasLoaded) {

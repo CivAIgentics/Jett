@@ -1,13 +1,13 @@
-# 🎨 Jacky 2.0 UI Enhancement Roadmap
+# 🎨 Jett UI Enhancement Roadmap
 
-This document outlines potential UI/UX improvements to make Jacky 2.0 look and feel amazing. Features are organized by priority and category for systematic implementation.
+This document outlines potential UI/UX improvements to make Jett look and feel amazing. Features are organized by priority and category for systematic implementation.
 
 ---
 
 ## 🔥 Priority 1: High Impact Quick Wins
 
 ### ✅ Completed
-- [x] Changed "Agent" to "Jacky" in message bubbles
+- [x] Changed "Agent" to "Jett" in message bubbles
 - [x] Auto language detection and switching (Spanish/English)
 - [x] Uniform button heights in service cards
 - [x] Centered icons in all cards
@@ -24,7 +24,7 @@ This document outlines potential UI/UX improvements to make Jacky 2.0 look and f
 #### Features:
 - [ ] Real-time voice waveform animation when speaking
 - [ ] Audio level meter (visualize microphone input)
-- [ ] Pulsing avatar animation when Jacky is speaking
+- [ ] Pulsing avatar animation when Jett is speaking
 - [ ] Sound wave ripples emanating from avatar during speech
 - [ ] Mute/unmute with smooth fade animation
 
@@ -183,7 +183,7 @@ const quickReplies = {
 
 #### Features:
 - [ ] Staggered entrance animation for service cards
-- [ ] Typewriter effect for Jacky's responses
+- [ ] Typewriter effect for Jett's responses
 - [ ] Smooth page transitions
 - [x] Breathing animation on primary button
 - [x] 3D tilt effect on cards (parallax)
@@ -219,7 +219,7 @@ const quickReplies = {
 #### Features:
 - [ ] Multiple color theme options (Blue, Green, Purple, Red)
 - [ ] Time-based auto dark mode (sunset/sunrise)
-- [ ] City pride mode (special Midland events)
+- [ ] City pride mode (special Odessa events)
 - [ ] Seasonal themes (Halloween, Christmas, etc.)
 - [ ] Custom theme creator (let users choose colors)
 - [ ] Theme preview before applying
@@ -326,7 +326,7 @@ Ctrl/Cmd + D - Toggle dark mode
 - [ ] Easter eggs for power users
 - [ ] Achievement badges for frequent users
 - [ ] Daily tips about city services
-- [ ] Fun facts about Midland, TX
+- [ ] Fun facts about Odessa, TX
 - [ ] Animated celebrations for milestones
 
 ---

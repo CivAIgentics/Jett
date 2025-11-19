@@ -87,9 +87,9 @@ ANAM_API_KEY=your_actual_anam_api_key_here
 ANAM_PERSONA_ID=your_actual_persona_id_here
 
 # Application Configuration
-ALLOWED_ORIGINS=https://midlandtexas.gov,http://localhost:3000
-APP_NAME=Jacky 2.0
-CITY_NAME=City of Midland, Texas
+ALLOWED_ORIGINS=https://Odessatexas.gov,http://localhost:3000
+APP_NAME=Jett
+CITY_NAME=City of Odessa, Texas
 
 # Session Configuration
 SESSION_TIMEOUT=1800000
@@ -260,10 +260,10 @@ anamClient.addListener('error', (error) => {});
 
 ```bash
 # Build the image
-docker build -t jacky-2.0 .
+docker build -t Jett-2.0 .
 
 # Run the container
-docker run -p 3000:3000 --env-file .env jacky-2.0
+docker run -p 3000:3000 --env-file .env Jett-2.0
 ```
 
 ### Docker Compose

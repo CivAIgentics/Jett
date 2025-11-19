@@ -265,10 +265,10 @@ const detectRelevantCards = (message, previousMessages = [], messageIndex = 0) =
 // Language translations
 const translations = {
   en: {
-    title: "Jacky 2.0 - Test",
-    subtitle: "City of Midland, Texas",
-    welcome: "Welcome to Jacky 2.0 - Test",
-    welcomeMessage: "Hello! I'm Jacky, your real-time AI assistant for all things Midland. I can answer questions and provide information on City of Midland services.",
+    title: "Jett - Test",
+    subtitle: "City of Odessa, Texas",
+    welcome: "Welcome to Jett - Test",
+    welcomeMessage: "Hello! I'm Jett, your real-time AI assistant for all things Odessa. I can answer questions and provide information on City of Odessa services.",
     readyForCall: "Ready for Call",
     activelyOnCall: "Actively on Call",
     relatedResources: "📌 Related Resources:",
@@ -281,18 +281,18 @@ const translations = {
     placeholderDisconnected: "Type a message to start...",
     payWaterBill: "Pay Water Bill",
     reportIssue: "Report an Issue",
-    permitMidland: "Permit Midland",
+    permitOdessa: "Permit Odessa",
     trafficAlerts: "Traffic Alerts",
-    greeting: "Hi, I'm Jacky 2.0 - Test 👋!",
+    greeting: "Hi, I'm Jett - Test 👋!",
     ctaText: "How can I help you?",
-    textModeMessage: "Both you and Jacky will be muted for text mode.",
+    textModeMessage: "Both you and Jett will be muted for text mode.",
     voiceModeHint: "Or click the phone icon for voice chat."
   },
   es: {
-    title: "Jacky 2.0",
-    subtitle: "Ciudad de Midland, Texas",
-    welcome: "Bienvenido a Jacky 2.0 - Prueba",
-    welcomeMessage: "¡Hola! Soy Jacky, tu asistente de IA en tiempo real para todo lo relacionado con Midland. Aunque no soy humano, puedo responder preguntas y proporcionar información sobre cualquier cosa relacionada con los servicios de la Ciudad de Midland.",
+    title: "Jett",
+    subtitle: "Ciudad de Odessa, Texas",
+    welcome: "Bienvenido a Jett - Prueba",
+    welcomeMessage: "¡Hola! Soy Jett, tu asistente de IA en tiempo real para todo lo relacionado con Odessa. Aunque no soy humano, puedo responder preguntas y proporcionar información sobre cualquier cosa relacionada con los servicios de la Ciudad de Odessa.",
     readyForCall: "Listo para Llamada",
     activelyOnCall: "En Llamada Activa",
     relatedResources: "📌 Recursos Relacionados:",
@@ -305,11 +305,11 @@ const translations = {
     placeholderDisconnected: "Escribe un mensaje para comenzar...",
     payWaterBill: "Pagar Factura de Agua",
     reportIssue: "Reportar un Problema",
-    permitMidland: "Permisos Midland",
+    permitOdessa: "Permisos Odessa",
     trafficAlerts: "Alertas de Tráfico",
-    greeting: "¡Hola, soy Jacky 2.0 - Prueba 👋!",
+    greeting: "¡Hola, soy Jett - Prueba 👋!",
     ctaText: "¿Cómo puedo ayudarte?",
-    textModeMessage: "Tanto tú como Jacky estarán en silencio para el modo de texto.",
+    textModeMessage: "Tanto tú como Jett estarán en silencio para el modo de texto.",
     voiceModeHint: "O haz clic en el ícono del teléfono para chat de voz."
   }
 };
@@ -328,7 +328,7 @@ export default function WidgetPage() {
   const [textInput, setTextInput] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
   const [isMicMuted, setIsMicMuted] = useState(false);
-  const [isJackyMuted, setIsJackyMuted] = useState(true); // Start with Jacky muted by default
+  const [isJettMuted, setIsJettMuted] = useState(true); // Start with Jett muted by default
   const [copiedMessageIndex, setCopiedMessageIndex] = useState(null);
   const [messageFeedback, setMessageFeedback] = useState({}); // Track feedback per message: { messageIndex: 'positive' | 'negative' }
   const [starRating, setStarRating] = useState(0); // Overall star rating (1-5)
@@ -353,7 +353,7 @@ export default function WidgetPage() {
 
   const conversation = useConversation({
     micMuted: isMicMuted, // Pass the muted state as a controlled prop
-    volume: isJackyMuted ? 0 : 1, // Control volume - start at 0 (muted)
+    volume: isJettMuted ? 0 : 1, // Control volume - start at 0 (muted)
     onConnect: () => {
       console.log('✅ Connected to ElevenLabs agent');
       console.log('Input volume:', conversation.getInputVolume?.());
@@ -447,7 +447,7 @@ export default function WidgetPage() {
         secondary: ['pet', 'dog', 'cat', 'animal', 'stray']
       },
       development: {
-        primary: ['building permit', 'construction permit', 'permit application', 'development services', 'permit midland'],
+        primary: ['building permit', 'construction permit', 'permit application', 'development services', 'permit Odessa'],
         secondary: ['permit', 'building', 'construction', 'inspection', 'contractor']
       },
       police: {
@@ -784,7 +784,7 @@ export default function WidgetPage() {
     if (isConnected) return;
     
     try {
-      addMessage('system', 'Connecting to Jacky with voice...');
+      addMessage('system', 'Connecting to Jett with voice...');
       
       // Get signed URL from our API endpoint
       console.log('Fetching signed URL...');
@@ -804,12 +804,12 @@ export default function WidgetPage() {
       // Wait a moment for connection to fully establish
       await new Promise(resolve => setTimeout(resolve, 300));
       
-      // Voice mode - microphone active AND Jacky's audio UNMUTED (full volume)
+      // Voice mode - microphone active AND Jett's audio UNMUTED (full volume)
       setIsMicMuted(false); // Unmute microphone via controlled prop
-      setIsJackyMuted(false); // Unmute Jacky's audio for voice calls
-      console.log('Voice mode: microphone unmuted, Jacky audio UNMUTED (volume=100%)');
+      setIsJettMuted(false); // Unmute Jett's audio for voice calls
+      console.log('Voice mode: microphone unmuted, Jett audio UNMUTED (volume=100%)');
       
-      addMessage('system', 'Voice chat connected. You can speak and hear Jacky.');
+      addMessage('system', 'Voice chat connected. You can speak and hear Jett.');
     } catch (error) {
       console.error('Failed to start conversation:', error);
       if (error.name === 'NotAllowedError' || error.name === 'PermissionDeniedError') {
@@ -837,7 +837,7 @@ export default function WidgetPage() {
     
     setIsConnected(false);
     setIsMicMuted(false);
-    setIsJackyMuted(true); // Reset to muted by default
+    setIsJettMuted(true); // Reset to muted by default
     addMessage('system', 'Conversation ended');
   };
 
@@ -858,7 +858,7 @@ export default function WidgetPage() {
     
     if (!isConnected) {
       try {
-        addMessage('system', 'Connecting to Jacky...');
+        addMessage('system', 'Connecting to Jett...');
         
         // Note: ElevenLabs Conversational AI requires microphone access even for text mode
         // We need to request it but will keep it muted
@@ -883,7 +883,7 @@ export default function WidgetPage() {
         
         // Immediately mute microphone and audio for text-only mode (controlled by props)
         setIsMicMuted(true); // Mute microphone via controlled prop
-        // isJackyMuted is already true by default, volume prop keeps it at 0
+        // isJettMuted is already true by default, volume prop keeps it at 0
         console.log('Text mode: microphone and audio both muted (micMuted=true, volume=0)');
         
         addMessage('system', 'Connected! Microphone and audio are muted. Type to chat.');
@@ -898,7 +898,7 @@ export default function WidgetPage() {
       } catch (error) {
         console.error('Failed to connect:', error);
         if (error.name === 'NotAllowedError' || error.name === 'PermissionDeniedError') {
-          addMessage('error', 'Microphone access is required to use Jacky (even for text chat). Please click Allow when prompted, or click the phone icon to try again.');
+          addMessage('error', 'Microphone access is required to use Jett (even for text chat). Please click Allow when prompted, or click the phone icon to try again.');
         } else {
           addMessage('error', `Failed to connect: ${error.message}`);
         }
@@ -934,17 +934,17 @@ export default function WidgetPage() {
     }
   };
 
-  const handleToggleJackyMute = () => {
-    if (isJackyMuted) {
-      // Unmute Jacky's audio output
-      setIsJackyMuted(false);
-      console.log('Jacky audio unmuted by setting volume state to 1');
-      addMessage('system', 'Jacky unmuted - you can now hear responses');
+  const handleToggleJettMute = () => {
+    if (isJettMuted) {
+      // Unmute Jett's audio output
+      setIsJettMuted(false);
+      console.log('Jett audio unmuted by setting volume state to 1');
+      addMessage('system', 'Jett unmuted - you can now hear responses');
     } else {
-      // Mute Jacky's audio output
-      setIsJackyMuted(true);
-      console.log('Jacky audio muted by setting volume state to 0');
-      addMessage('system', 'Jacky muted');
+      // Mute Jett's audio output
+      setIsJettMuted(true);
+      console.log('Jett audio muted by setting volume state to 0');
+      addMessage('system', 'Jett muted');
     }
   };
 
@@ -1136,7 +1136,7 @@ export default function WidgetPage() {
           <button 
             className={styles.widgetButton}
             onClick={handleExpand}
-            aria-label="Open Jacky 2.0 Chat"
+            aria-label="Open Jett Chat"
           >
             {/* Old language selector - will remove */}
             {mounted && false && (
@@ -1169,7 +1169,7 @@ export default function WidgetPage() {
                 className={styles.orbCanvas}
               />
             </div>
-            <span className={styles.widgetGreeting} data-lang={language}>{mounted ? t.greeting : 'Hi, I\'m Jacky 2.0 - Test 👋!'}</span>
+            <span className={styles.widgetGreeting} data-lang={language}>{mounted ? t.greeting : 'Hi, I\'m Jett - Test 👋!'}</span>
           </div>
           
           <div className={styles.widgetCta}>
@@ -1288,7 +1288,7 @@ export default function WidgetPage() {
                   
                   {/* Quick Action Buttons */}
                   <div className={styles.quickActions}>
-                    <a href="https://water.midlandtexas.gov/app/login.jsp" target="_blank" rel="noopener noreferrer" className={styles.quickActionBtn}>
+                    <a href="https://water.Odessatexas.gov/app/login.jsp" target="_blank" rel="noopener noreferrer" className={styles.quickActionBtn}>
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
                       </svg>
@@ -1300,11 +1300,11 @@ export default function WidgetPage() {
                       </svg>
                       {t.reportIssue}
                     </a>
-                    <a href="https://www.midlandtexas.gov/1424/PermitMidland" target="_blank" rel="noopener noreferrer" className={styles.quickActionBtn}>
+                    <a href="https://www.Odessatexas.gov/1424/PermitOdessa" target="_blank" rel="noopener noreferrer" className={styles.quickActionBtn}>
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
                       </svg>
-                      {t.permitMidland}
+                      {t.permitOdessa}
                     </a>
                     <a href="https://experience.arcgis.com/experience/4cc2fed9276343f39056238d9936e4c6/" target="_blank" rel="noopener noreferrer" className={styles.quickActionBtn}>
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -1363,7 +1363,7 @@ export default function WidgetPage() {
                           </button>
                         )}
                         <span className={styles.messageType}>
-                          {msg.type === 'agent' ? 'Jacky 2.0' : 
+                          {msg.type === 'agent' ? 'Jett' : 
                            msg.type === 'user' ? 'User' :
                            msg.type === 'error' ? 'Error' : 'System'}
                         </span>
@@ -1442,7 +1442,7 @@ export default function WidgetPage() {
                       </div>
                     </div>
                     <div className={`${styles.message} ${styles.agent}`}>
-                      <span className={styles.messageType}>Jacky 2.0</span>
+                      <span className={styles.messageType}>Jett</span>
                       <TypingIndicator type="agent" />
                     </div>
                   </div>
@@ -1559,11 +1559,11 @@ export default function WidgetPage() {
                     </button>
                     <button
                       type="button"
-                      onClick={handleToggleJackyMute}
-                      className={`${styles.speakerBtn} ${isJackyMuted ? styles.muted : ''}`}
-                      title={isJackyMuted ? "Unmute Jacky's Audio" : "Mute Jacky's Audio"}
+                      onClick={handleToggleJettMute}
+                      className={`${styles.speakerBtn} ${isJettMuted ? styles.muted : ''}`}
+                      title={isJettMuted ? "Unmute Jett's Audio" : "Mute Jett's Audio"}
                     >
-                      {isJackyMuted ? (
+                      {isJettMuted ? (
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                           <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
                         </svg>
@@ -1651,7 +1651,7 @@ export default function WidgetPage() {
             </div>
             <div className={styles.surveyModalBody}>
               <iframe
-                src="https://cityofmidlandtx.gov1.qualtrics.com/jfe/form/SV_0OPsa3AFYQafkSa"
+                src="https://cityofOdessatx.gov1.qualtrics.com/jfe/form/SV_0OPsa3AFYQafkSa"
                 className={styles.surveyIframe}
                 title="Customer Satisfaction Survey"
                 frameBorder="0"

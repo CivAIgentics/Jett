@@ -14,7 +14,7 @@
 - Works seamlessly even when you switch to other tabs
 
 ### 2. **Background Tab Listening**
-- Recognition continues even when Jacky's tab is in the background
+- Recognition continues even when Jett's tab is in the background
 - You can open multiple links and switch between tabs freely
 - Voice commands work immediately when you return to the tab
 
@@ -40,7 +40,7 @@
 1. Voice recognition is ON
 2. You say "open permits" → New tab opens
 3. You browse the permits page in the new tab
-4. You switch back to Jacky's tab
+4. You switch back to Jett's tab
 5. Voice recognition is STILL ON
 6. Say "open water account" → Instantly opens!
 ```
@@ -126,7 +126,7 @@ No button clicks needed!
 1. User: "open permits"
 2. New tab opens with permits page
 3. User browses permits for 5 minutes
-4. User switches back to Jacky tab
+4. User switches back to Jett tab
 5. User: "open water account"
 6. ✅ Immediately opens (no restart needed)
 ```
@@ -163,7 +163,7 @@ User: "open directory"
 ## 💡 Tips for Best Results
 
 1. **Start Once, Use Forever**
-   - Click the voice button once when you open Jacky
+   - Click the voice button once when you open Jett
    - Never need to click it again for the entire session
 
 2. **Speak Clearly**
@@ -174,7 +174,7 @@ User: "open directory"
 3. **Multiple Tabs**
    - Open as many links as you want
    - Browse them in new tabs
-   - Return to Jacky anytime and keep talking
+   - Return to Jett anytime and keep talking
 
 4. **No Cooldown Frustration**
    - Commands process in 500ms instead of 2 seconds
@@ -191,7 +191,7 @@ User: "open directory"
 ## 🚀 Future Enhancements
 
 Potential improvements:
-- [ ] Wake word detection ("Hey Jacky")
+- [ ] Wake word detection ("Hey Jett")
 - [ ] Voice feedback confirmation
 - [ ] Custom voice commands
 - [ ] Voice-controlled navigation

@@ -1,5 +1,5 @@
 /**
- * Jacky 2.0 - City of Midland AI Assistant
+ * Jett - City of Odessa AI Assistant
  * Custom UI Integration with ElevenLabs Conversational AI
  */
 
@@ -36,7 +36,7 @@ const elements = {
  */
 async function init() {
     try {
-        console.log('🚀 Initializing Jacky 2.0...');
+        console.log('🚀 Initializing Jett...');
         updateStatus('Initializing...', 'connecting');
         
         // Load configuration from server
@@ -50,11 +50,11 @@ async function init() {
         updateStatus('Ready', 'connected');
         elements.loadingOverlay.classList.add('hidden');
         
-        console.log('✅ Jacky 2.0 initialized successfully');
+        console.log('✅ Jett initialized successfully');
         
     } catch (error) {
         console.error('❌ Initialization error:', error);
-        showError('Failed to initialize Jacky 2.0. Please refresh the page and try again.');
+        showError('Failed to initialize Jett. Please refresh the page and try again.');
         updateStatus('Error', 'error');
     }
 }
@@ -180,7 +180,7 @@ async function startConversation() {
         updateStatus('Connected', 'connected');
         
         console.log('✅ Conversation started successfully');
-        console.log('🎤 Speak now - Jacky is listening via ElevenLabs!');
+        console.log('🎤 Speak now - Jett is listening via ElevenLabs!');
         
     } catch (error) {
         console.error('❌ Error starting conversation:', error);
@@ -375,7 +375,7 @@ function setupElevenLabsEventHandlers() {
                     break;
                     
                 case 'agent_response':
-                    console.log('🤖 Jacky said:', data.agent_response || data.transcript);
+                    console.log('🤖 Jett said:', data.agent_response || data.transcript);
                     break;
                     
                 case 'interruption':
@@ -388,7 +388,7 @@ function setupElevenLabsEventHandlers() {
                 case 'agent_chat_response_part':
                     // Agent is speaking (text part)
                     if (data.text_response_part && data.text_response_part.text) {
-                        console.log('🤖 Jacky:', data.text_response_part.text);
+                        console.log('🤖 Jett:', data.text_response_part.text);
                     }
                     break;
                     
@@ -540,7 +540,7 @@ window.addEventListener('beforeunload', () => {
 });
 
 // Export for debugging
-window.JackyApp = {
+window.JettApp = {
     state,
     startConversation,
     stopConversation,

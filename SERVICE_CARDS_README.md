@@ -1,13 +1,13 @@
 # Service Cards Integration
 
 ## Overview
-Jacky 2.0 now automatically displays relevant service cards when keywords are detected in conversation. Service cards provide quick access to City of Midland resources, contact information, and online services.
+Jett now automatically displays relevant service cards when keywords are detected in conversation. Service cards provide quick access to City of Odessa resources, contact information, and online services.
 
 ## How It Works
 
 ### 1. Keyword Detection
 - When the user speaks or types, and when the AI agent responds, the system analyzes the text for keywords
-- Keywords are matched against a comprehensive database of City of Midland services
+- Keywords are matched against a comprehensive database of City of Odessa services
 - The system is **broad and lenient** - it catches various phrasings and synonyms
 
 ### 2. Automatic Display
@@ -29,7 +29,7 @@ Jacky 2.0 now automatically displays relevant service cards when keywords are de
 
 ### Building & Development
 **User says:** "I need a building permit"
-**Cards shown:** Development Services, PermitMidland Portal, Building Permits
+**Cards shown:** Development Services, PermitOdessa Portal, Building Permits
 
 ### Animal Services
 **User says:** "I found a lost dog"
@@ -62,9 +62,9 @@ Jacky 2.0 now automatically displays relevant service cards when keywords are de
 {
   title: "Service Name",
   description: "Service description",
-  url: "https://midlandtexas.gov/...",
+  url: "https://Odessatexas.gov/...",
   phone: "(432) 685-XXXX",
-  email: "service@midlandtexas.gov",
+  email: "service@Odessatexas.gov",
   keywords: ["keyword1", "keyword2", ...],
   titleEs: "Spanish title",
   descriptionEs: "Spanish description",
@@ -80,9 +80,9 @@ To add a new service card, edit `public/js/service-cards.js`:
 newServiceName: {
   title: "Service Title",
   description: "Brief description of the service",
-  url: "https://midlandtexas.gov/service-page",
+  url: "https://Odessatexas.gov/service-page",
   phone: "(432) 685-XXXX", // Optional
-  email: "service@midlandtexas.gov", // Optional
+  email: "service@Odessatexas.gov", // Optional
   keywords: [
     "keyword1", 
     "keyword2", 
@@ -120,7 +120,7 @@ keywords: [
 ### Example - Poor Keywords (Too Narrow)
 ```javascript
 keywords: [
-  "permit midland online application form"
+  "permit Odessa online application form"
 ]
 ```
 

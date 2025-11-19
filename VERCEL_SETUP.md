@@ -16,14 +16,14 @@ ELEVENLABS_AGENT_ID=your_agent_id
 ```
 NODE_ENV=production
 ALLOWED_ORIGINS=https://your-domain.vercel.app
-APP_NAME=Jacky 2.0
-CITY_NAME=City of Midland, Texas
+APP_NAME=Jett
+CITY_NAME=City of Odessa, Texas
 ```
 
 ## Quick Setup Steps
 
 1. **Go to Vercel Dashboard**: https://vercel.com/dashboard
-2. **Select your project**: `Jacky-2.0-ANAM-ElevenLabs-`
+2. **Select your project**: `Jett-2.0-ANAM-ElevenLabs-`
 3. **Go to Settings** → **Environment Variables**
 4. **Add each variable** from above
 5. **Redeploy** your project
@@ -36,7 +36,7 @@ Should return:
 ```json
 {
   "status": "healthy",
-  "service": "Jacky 2.0",
+  "service": "Jett",
   "timestamp": "..."
 }
 ```

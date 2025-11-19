@@ -8,14 +8,14 @@
 
 ## 🚀 What We Built
 
-Jacky 3.0 now has **comprehensive bilingual support** for both English and Spanish speakers! This is a major enhancement that makes the platform truly inclusive for Midland's diverse community.
+Jett now has **comprehensive bilingual support** for both English and Spanish speakers! This is a major enhancement that makes the platform truly inclusive for Odessa's diverse community.
 
 ---
 
 ## ✨ Features Implemented
 
 ### 1. **Intent Detection (12 Categories)**
-Jacky understands user intent in both languages:
+Jett understands user intent in both languages:
 
 | Category | English | Spanish |
 |----------|---------|---------|
@@ -38,7 +38,7 @@ Jacky understands user intent in both languages:
 ---
 
 ### 2. **Semantic Similarity & Synonyms (26 Mappings)**
-Jacky recognizes related terms:
+Jett recognizes related terms:
 
 **English:**
 - fix → repair, maintenance, service
@@ -118,13 +118,13 @@ el, la, los, las, un, una, unos, unas, y, o, pero, en, de, del, al, con, por, pa
 ### 5. **Voice Command Patterns (Bilingual)**
 
 **English Commands:**
-- "Talk to Jacky" / "Start conversation"
+- "Talk to Jett" / "Start conversation"
 - "Open [service]" / "Show me [service]"
 - "Dark mode" / "Light mode" / "Toggle theme"
 - "Change language"
 
 **Spanish Commands:**
-- "Hablar con Jacky" / "Comenzar conversación"
+- "Hablar con Jett" / "Comenzar conversación"
 - "Abrir [servicio]" / "Muestra [servicio]" / "Mostrar [servicio]"
 - "Modo oscuro" / "Modo claro" / "Cambiar tema"
 - "Cambiar idioma"
@@ -252,7 +252,7 @@ Updated ANAM agent system prompt to:
 **English:**
 ```
 👤 User: "I need to pay my water bill"
-🧠 Jacky: Intent detected: ['payment', 'utility']
+🧠 Jett: Intent detected: ['payment', 'utility']
          Keywords: pay, water, bill
          Score: 23 points
 🎯 Action: Opens Utility Billing portal
@@ -262,7 +262,7 @@ Updated ANAM agent system prompt to:
 **Spanish:**
 ```
 👤 User: "Necesito pagar mi factura de agua"
-🧠 Jacky: Intent detected: ['payment', 'utility']
+🧠 Jett: Intent detected: ['payment', 'utility']
          Keywords: pagar, factura, agua
          Score: 23 points
 🎯 Action: Opens Utility Billing portal
@@ -276,7 +276,7 @@ Updated ANAM agent system prompt to:
 **English:**
 ```
 👤 User: "Report a broken streetlight"
-🧠 Jacky: Intent detected: ['report', 'utility']
+🧠 Jett: Intent detected: ['report', 'utility']
          Keywords: report, broken, streetlight
          Score: 18 points
 🎯 Action: Opens Public Works
@@ -286,7 +286,7 @@ Updated ANAM agent system prompt to:
 **Spanish:**
 ```
 👤 User: "Reportar una luz de calle rota"
-🧠 Jacky: Intent detected: ['report', 'utility']
+🧠 Jett: Intent detected: ['report', 'utility']
          Keywords: reportar, luz, calle, rota
          Score: 18 points
 🎯 Action: Opens Public Works
@@ -300,7 +300,7 @@ Updated ANAM agent system prompt to:
 **English:**
 ```
 👤 User: "Show me job opportunities"
-🧠 Jacky: Intent detected: ['job', 'information']
+🧠 Jett: Intent detected: ['job', 'information']
          Keywords: show, job, opportunities
          Score: 16 points
 🎯 Action: Opens Career Page
@@ -310,7 +310,7 @@ Updated ANAM agent system prompt to:
 **Spanish:**
 ```
 👤 User: "Muéstrame oportunidades de trabajo"
-🧠 Jacky: Intent detected: ['job', 'information']
+🧠 Jett: Intent detected: ['job', 'information']
          Keywords: muestra, oportunidades, trabajo
          Score: 16 points
 🎯 Action: Opens Career Page
@@ -319,11 +319,11 @@ Updated ANAM agent system prompt to:
 
 ---
 
-## 📈 Impact on Midland Community
+## 📈 Impact on Odessa Community
 
 ### Demographics Served:
-- **English Speakers:** 70% of Midland residents - ✅ Full support
-- **Spanish Speakers:** 30% of Midland residents - ✅ Now fully supported!
+- **English Speakers:** 70% of Odessa residents - ✅ Full support
+- **Spanish Speakers:** 30% of Odessa residents - ✅ Now fully supported!
 - **Bilingual Residents:** ✅ Code-switching enabled
 
 ### Accessibility Improvements:
@@ -396,7 +396,7 @@ Developers can see intent detection in action:
 
 ### 3. **Wake Word Support (English & Spanish)**
 Users can say:
-- "Hey Jacky" / "Hi Jacky" / "Hello Jacky"
+- "Hey Jett" / "Hi Jett" / "Hello Jett"
 - (Spanish wake words ready for future implementation)
 
 ---
@@ -505,9 +505,9 @@ Users can say:
 
 **Developer:** GitHub Copilot (Claude Sonnet 4.5)  
 **Architect:** Dr. Steven Sierra Alcabes  
-**Organization:** City of Midland, Texas  
+**Organization:** City of Odessa, Texas  
 **Company:** CivAIgentics, LLC  
-**Project:** Jacky 3.0 - Municipal AI Assistant  
+**Project:** Jett - Municipal AI Assistant  
 **Date:** November 17, 2025
 
 ---
@@ -515,7 +515,7 @@ Users can say:
 ## 📞 Support & Feedback
 
 **Questions or Issues?**
-- GitHub: github.com/CivAIgentics/Jacky-3.0
+- GitHub: github.com/CivAIgentics/Jett-3.0
 - Email: ssierraalcabes@CivAIgentics.io
 - Documentation: BILINGUAL_SUPPORT.md
 - Test Suite: BILINGUAL_TEST_SUITE.md
@@ -526,17 +526,17 @@ Users can say:
 
 - ✅ **Development:** Ready for testing
 - ✅ **GitHub:** Pushed to main branch (4 commits)
-- ✅ **Vercel:** Auto-deployed to jacky-3-0.vercel.app
+- ✅ **Vercel:** Auto-deployed to Jett-3-0.vercel.app
 - ⏳ **Production:** Ready for user testing
 
 ---
 
-**¡Felicitaciones! Jacky 3.0 ahora habla español! 🎊**  
-**Congratulations! Jacky 3.0 now speaks Spanish! 🎊**
+**¡Felicitaciones! Jett ahora habla español! 🎊**  
+**Congratulations! Jett now speaks Spanish! 🎊**
 
 **To the moon! 🚀🌙**
 
 ---
 
-*Built with ❤️ for the City of Midland, Texas*  
+*Built with ❤️ for the City of Odessa, Texas*  
 *Powered by CivAIgentics, LLC*

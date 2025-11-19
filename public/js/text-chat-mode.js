@@ -103,7 +103,7 @@ class TextChatMode {
             }
             
             // Show welcome message
-            this.addMessage('agent', 'Hello! I\'m Jacky, your City of Midland assistant. How can I help you today?');
+            this.addMessage('agent', 'Hello! I\'m Jett, your City of Odessa assistant. How can I help you today?');
             
             this.showStatus('Text mode active - Type your message', 'success');
             this.elements.input.focus();

@@ -1,6 +1,6 @@
-# 🚀 Quick Start Guide - Jacky 2.0
+# 🚀 Quick Start Guide - Jett
 
-This is a quick reference guide to get Jacky 2.0 up and running as fast as possible.
+This is a quick reference guide to get Jett up and running as fast as possible.
 
 ## Prerequisites Checklist
 
@@ -115,13 +115,13 @@ npm install
 2. ✅ Test locally at http://localhost:3000
 3. ✅ Customize ElevenLabs agent with city information
 4. ✅ Deploy to production server
-5. ✅ Embed in midlandtexas.gov
+5. ✅ Embed in Odessatexas.gov
 
 ## Need Help?
 
 - 📖 Full docs: See [README.md](./README.md)
 - 🐛 Issues: Check browser console (F12)
-- 📧 Support: itsupport@midlandtexas.gov
+- 📧 Support: itsupport@Odessatexas.gov
 
 ---
 

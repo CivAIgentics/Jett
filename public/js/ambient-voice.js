@@ -2,7 +2,7 @@
  * Ambient Voice Recognition System
  * - Voice search for service cards
  * - Quick voice commands
- * - "Hey Jacky" wake word detection
+ * - "Hey Jett" wake word detection
  * - Always-on listening mode
  */
 
@@ -206,7 +206,7 @@ class AmbientVoiceRecognition {
             </svg>
             <span class="voice-pulse"></span>
         `;
-        this.voiceButton.title = 'Voice Commands (Click or say "Hey Jacky")';
+        this.voiceButton.title = 'Voice Commands (Click or say "Hey Jett")';
 
         // Add to header
         const rightControls = header.querySelector('.header-right') || header;
@@ -386,7 +386,7 @@ class AmbientVoiceRecognition {
             this.recognition.start();
             this.isListening = true;
             this.voiceButton?.classList.add('listening');
-            this.showResult('🎤 Listening... Try "Find permits" or "Hey Jacky"');
+            this.showResult('🎤 Listening... Try "Find permits" or "Hey Jett"');
             
             // Haptic feedback
             if (navigator.vibrate) {
@@ -439,14 +439,14 @@ class AmbientVoiceRecognition {
     }
 
     detectWakeWord(transcript) {
-        // Wake word variations - all phonetically similar to "Jacky"
+        // Wake word variations - all phonetically similar to "Jett"
         const wakeWordPatterns = [
-            'hey jacky', 'hey jackie', 'hey jaki', 'hey jaky', 'hey jakki',
+            'hey Jett', 'hey jackie', 'hey jaki', 'hey jaky', 'hey jakki',
             'hey jack', 'hey jacki', 'hey jacci', 'hey jakee', 'hey jakey',
-            'ok jacky', 'ok jackie', 'ok jaki', 'ok jaky', 'ok jakki',
-            'okay jacky', 'okay jackie', 'okay jaki',
-            'hi jacky', 'hi jackie', 'hi jaki',
-            'hello jacky', 'hello jackie', 'hello jaki'
+            'ok Jett', 'ok jackie', 'ok jaki', 'ok jaky', 'ok jakki',
+            'okay Jett', 'okay jackie', 'okay jaki',
+            'hi Jett', 'hi jackie', 'hi jaki',
+            'hello Jett', 'hello jackie', 'hello jaki'
         ];
 
         // Check if transcript contains any wake word pattern
@@ -457,12 +457,12 @@ class AmbientVoiceRecognition {
             }
         }
 
-        // Also check for standalone "jacky" variants after "hey/hi/ok/hello"
+        // Also check for standalone "Jett" variants after "hey/hi/ok/hello"
         const starterWords = ['hey', 'hi', 'ok', 'okay', 'hello'];
-        const jackyVariants = ['jacky', 'jackie', 'jaki', 'jaky', 'jakki', 'jack', 'jacki', 'jacci', 'jakee', 'jakey'];
+        const JettVariants = ['Jett', 'jackie', 'jaki', 'jaky', 'jakki', 'jack', 'jacki', 'jacci', 'jakee', 'jakey'];
         
         for (const starter of starterWords) {
-            for (const variant of jackyVariants) {
+            for (const variant of JettVariants) {
                 const pattern = `${starter} ${variant}`;
                 if (transcript.includes(pattern)) {
                     console.log('✨ Wake word detected (variant):', pattern);
@@ -493,14 +493,14 @@ class AmbientVoiceRecognition {
     }
 
     handleVoiceCommand(transcript) {
-        // Start conversation - English and Spanish with Jacky name variations
+        // Start conversation - English and Spanish with Jett name variations
         const talkPatterns = [
             // English
-            'start conversation', 'talk to jacky', 'talk to jackie', 'talk to jaki', 
-            'speak to jacky', 'speak to jackie', 'chat with jacky', 'chat with jackie',
+            'start conversation', 'talk to Jett', 'talk to jackie', 'talk to jaki', 
+            'speak to Jett', 'speak to jackie', 'chat with Jett', 'chat with jackie',
             // Spanish
-            'comenzar conversación', 'hablar con jacky', 'hablar con jackie',
-            'platicar con jacky', 'chatear con jacky'
+            'comenzar conversación', 'hablar con Jett', 'hablar con jackie',
+            'platicar con Jett', 'chatear con Jett'
         ];
         
         if (talkPatterns.some(pattern => transcript.includes(pattern))) {

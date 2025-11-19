@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  jacky-2.0:
+  Jett-2.0:
     build: .
     ports:
       - "3000:3000"
@@ -13,8 +13,8 @@ services:
     volumes:
       - ./logs:/app/logs
     networks:
-      - jacky-network
+      - Jett-network
 
 networks:
-  jacky-network:
+  Jett-network:
     driver: bridge

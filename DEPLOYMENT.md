@@ -1,12 +1,12 @@
-# Deployment Checklist - Jacky 2.0
+# Deployment Checklist - Jett
 
-Use this checklist when deploying Jacky 2.0 to production.
+Use this checklist when deploying Jett to production.
 
 ## Pre-Deployment
 
 ### API Keys & Accounts
 - [ ] ElevenLabs account created
-- [ ] ElevenLabs agent configured with City of Midland knowledge base
+- [ ] ElevenLabs agent configured with City of Odessa knowledge base
 - [ ] ElevenLabs API key obtained
 - [ ] ElevenLabs Agent ID obtained
 - [ ] ANAM AI account created
@@ -24,7 +24,7 @@ Use this checklist when deploying Jacky 2.0 to production.
 ### Server Setup
 - [ ] Production server provisioned (VPS/Cloud)
 - [ ] Node.js 18+ installed on server
-- [ ] Domain/subdomain configured (e.g., jacky.midlandtexas.gov)
+- [ ] Domain/subdomain configured (e.g., Jett.Odessatexas.gov)
 - [ ] SSL certificate obtained (Let's Encrypt recommended)
 - [ ] Firewall configured (ports 80, 443, 3000)
 - [ ] Reverse proxy configured (Nginx/Apache)
@@ -53,20 +53,20 @@ Use this checklist when deploying Jacky 2.0 to production.
 - [ ] ELEVENLABS_AGENT_ID=<production_agent_id>
 - [ ] ANAM_API_KEY=<production_key>
 - [ ] ANAM_PERSONA_ID=<production_persona_id>
-- [ ] ALLOWED_ORIGINS=https://midlandtexas.gov,https://www.midlandtexas.gov
+- [ ] ALLOWED_ORIGINS=https://Odessatexas.gov,https://www.Odessatexas.gov
 ```
 
 ### 4. Security
 - [ ] HTTPS enabled and enforced
 - [ ] SSL certificate valid and auto-renewing
-- [ ] CORS configured with only midlandtexas.gov domains
+- [ ] CORS configured with only Odessatexas.gov domains
 - [ ] Firewall rules applied
 - [ ] Rate limiting configured (optional but recommended)
 - [ ] Security headers verified (Helmet.js)
 
 ### 5. Testing Production
 - [ ] Application accessible via production URL
-- [ ] Health check endpoint responding: `https://jacky.midlandtexas.gov/api/health`
+- [ ] Health check endpoint responding: `https://Jett.Odessatexas.gov/api/health`
 - [ ] WebSocket connection working
 - [ ] ANAM avatar loads correctly
 - [ ] Conversation starts successfully
@@ -91,7 +91,7 @@ Choose one:
 **Option A: Full Page Embed**
 ```html
 <iframe 
-    src="https://jacky.midlandtexas.gov" 
+    src="https://Jett.Odessatexas.gov" 
     width="100%" 
     height="700px"
     allow="microphone; camera; autoplay"
@@ -140,7 +140,7 @@ Choose one:
 - [ ] Contact information documented
 
 ### User Communication
-- [ ] Announce Jacky 2.0 to citizens
+- [ ] Announce Jett to citizens
 - [ ] Add help/FAQ section
 - [ ] Provide feedback mechanism
 - [ ] Monitor initial user feedback
@@ -179,7 +179,7 @@ Choose one:
 
 - **ElevenLabs Support**: support@elevenlabs.io
 - **ANAM AI Support**: support@anam.ai
-- **Internal IT**: itsupport@midlandtexas.gov
+- **Internal IT**: itsupport@Odessatexas.gov
 - **Developer**: [Add contact info]
 
 ## Rollback Procedure
@@ -188,7 +188,7 @@ If issues occur:
 
 ```bash
 # Stop the application
-pm2 stop jacky-2.0
+pm2 stop Jett-2.0
 
 # Revert to previous version
 git checkout <previous-commit-hash>
@@ -197,7 +197,7 @@ git checkout <previous-commit-hash>
 npm install --production
 
 # Restart application
-pm2 start jacky-2.0
+pm2 start Jett-2.0
 pm2 save
 ```
 
@@ -210,5 +210,5 @@ pm2 save
 ---
 
 **Deployment Date**: ______________
-**Production URL**: https://jacky.midlandtexas.gov
+**Production URL**: https://Jett.Odessatexas.gov
 **Status**: ☐ Testing  ☐ Staging  ☐ Production

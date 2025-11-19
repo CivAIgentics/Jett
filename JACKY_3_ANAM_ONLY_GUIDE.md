@@ -1,10 +1,10 @@
-# Jacky 3.0 - ANAM-Only Integration Guide
+# Jett - ANAM-Only Integration Guide
 
 ## Overview
 
-Jacky 3.0 is the City of Midland's AI Assistant, now powered **exclusively by ANAM AI**. This version removes the ElevenLabs integration and uses ANAM's built-in conversational AI capabilities for both the visual avatar and intelligent conversation.
+Jett is the City of Odessa's AI Assistant, now powered **exclusively by ANAM AI**. This version removes the ElevenLabs integration and uses ANAM's built-in conversational AI capabilities for both the visual avatar and intelligent conversation.
 
-## Key Changes from Jacky 2.0
+## Key Changes from Jett
 
 ### ✅ What's New
 - **ANAM-Only Architecture**: Single platform for both avatar and conversation
@@ -22,7 +22,7 @@ Jacky 3.0 is the City of Midland's AI Assistant, now powered **exclusively by AN
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│              Jacky 3.0 Web Application                  │
+│              Jett Web Application                  │
 │  ┌────────────────────────────────────────────────────┐ │
 │  │  Custom UI (React-like Components)                 │ │
 │  │  - Service Cards                                   │ │
@@ -243,13 +243,13 @@ vercel
 
 ```bash
 # Build image
-docker build -t jacky-3.0 .
+docker build -t Jett-3.0 .
 
 # Run container
 docker run -p 3000:3000 \
   -e ANAM_API_KEY=your_key \
   -e ANAM_PERSONA_ID=ef1b0530-5288-4505-bde1-8cc72fb09904 \
-  jacky-3.0
+  Jett-3.0
 ```
 
 ## Troubleshooting
@@ -324,7 +324,7 @@ loadServiceCards();
 
 - **ANAM Documentation**: [https://docs.anam.ai](https://docs.anam.ai)
 - **ANAM Support**: support@anam.ai
-- **Jacky 3.0 Issues**: https://github.com/CivAIgentics/Jacky-3.0/issues
+- **Jett Issues**: https://github.com/CivAIgentics/Jett-3.0/issues
 
 ## License
 

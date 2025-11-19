@@ -1,5 +1,5 @@
 /**
- * Jacky 3.0 - City of Midland AI Assistant
+ * Jett - City of Odessa AI Assistant
  * ANAM-Only Conversational AI Integration
  * ANAM provides both LLM conversation and visual avatar with lip sync
  */
@@ -63,15 +63,15 @@ const state = {
     starRating: 0,
     hoveredStar: 0,
     currentLanguage: 'en',
-    personaId: 'ef1b0530-5288-4505-bde1-8cc72fb09904', // Jacky 3.0 Persona ID
+    personaId: 'ef1b0530-5288-4505-bde1-8cc72fb09904', // Jett Persona ID
     mediaStream: null  // Store the media stream for muting
 };
 
 // Translations
 const translations = {
     en: {
-        appTitle: 'Jacky 3.0',
-        appSubtitle: 'City of Midland AI Assistant',
+        appTitle: 'Jett',
+        appSubtitle: 'City of Odessa AI Assistant',
         statusInitializing: 'Initializing...',
         statusConnecting: 'Connecting...',
         statusConnected: 'Connected',
@@ -84,18 +84,18 @@ const translations = {
         unmuteAgent: 'Unmute Agent',
         textChat: 'Text Chat',
         textChatTitle: 'Type your message',
-        textChatPlaceholder: 'Type your message to Jacky...',
+        textChatPlaceholder: 'Type your message to Jett...',
         sendMessage: 'Send',
-        infoText: 'Click "Start Conversation" to speak with Jacky 3.0. Allow microphone access when prompted.',
+        infoText: 'Click "Start Conversation" to speak with Jett. Allow microphone access when prompted.',
         conversationTitle: 'Conversation',
-        welcomeTitle: 'Welcome to Jacky 3.0!',
-        welcomeMessage: "I'm your AI assistant for City of Midland services. Start a conversation to ask me anything about city services, utilities, permits, and more.",
+        welcomeTitle: 'Welcome to Jett!',
+        welcomeMessage: "I'm your AI assistant for City of Odessa services. Start a conversation to ask me anything about city services, utilities, permits, and more.",
         quickServices: 'Quick Links and Services',
         searchAllServices: 'Search All Services',
         rateExperience: 'Rate your experience:',
         valueFeedback: 'We value your feedback',
         userLabel: 'User',
-        agentLabel: 'Jacky',
+        agentLabel: 'Jett',
         errorTitle: 'Error',
         retry: 'Retry',
         poor: 'Very Poor',
@@ -122,8 +122,8 @@ const translations = {
         resultsFound: '{count} services found'
     },
     es: {
-        appTitle: 'Jacky 3.0',
-        appSubtitle: 'Asistente de IA de la Ciudad de Midland',
+        appTitle: 'Jett',
+        appSubtitle: 'Asistente de IA de la Ciudad de Odessa',
         statusInitializing: 'Inicializando...',
         statusConnecting: 'Conectando...',
         statusConnected: 'Conectado',
@@ -136,18 +136,18 @@ const translations = {
         unmuteAgent: 'Activar Agente',
         textChat: 'Chat de Texto',
         textChatTitle: 'Escribe tu mensaje',
-        textChatPlaceholder: 'Escribe tu mensaje a Jacky...',
+        textChatPlaceholder: 'Escribe tu mensaje a Jett...',
         sendMessage: 'Enviar',
-        infoText: 'Haz clic en "Iniciar Conversación" para hablar con Jacky 3.0. Permite el acceso al micrófono cuando se solicite.',
+        infoText: 'Haz clic en "Iniciar Conversación" para hablar con Jett. Permite el acceso al micrófono cuando se solicite.',
         conversationTitle: 'Conversación',
-        welcomeTitle: '¡Bienvenido a Jacky 3.0!',
-        welcomeMessage: 'Soy tu asistente de IA para los servicios de la Ciudad de Midland. Inicia una conversación para preguntarme sobre servicios municipales, servicios públicos, permisos y más.',
+        welcomeTitle: '¡Bienvenido a Jett!',
+        welcomeMessage: 'Soy tu asistente de IA para los servicios de la Ciudad de Odessa. Inicia una conversación para preguntarme sobre servicios municipales, servicios públicos, permisos y más.',
         quickServices: 'Enlaces y Servicios Rápidos',
         searchAllServices: 'Buscar Todos los Servicios',
         rateExperience: 'Califica tu experiencia:',
         valueFeedback: 'Valoramos tus comentarios',
         userLabel: 'Usuario',
-        agentLabel: 'Jacky',
+        agentLabel: 'Jett',
         errorTitle: 'Error',
         retry: 'Reintentar',
         poor: 'Muy Malo',
@@ -308,7 +308,7 @@ function detectLanguage() {
  */
 async function init() {
     try {
-        console.log('🚀 Initializing Jacky 3.0 (ANAM-Only)...');
+        console.log('🚀 Initializing Jett (ANAM-Only)...');
         
         setupEventListeners();
         console.log('✅ Event listeners initialized');
@@ -328,7 +328,7 @@ async function init() {
         const initialLang = detectLanguage();
         switchLanguage(initialLang);
         
-        console.log('✅ Jacky 3.0 initialized successfully');
+        console.log('✅ Jett initialized successfully');
         updateStatus('Ready', 'ready');
         
         loadServiceCards();
@@ -876,14 +876,14 @@ function toggleAgentMute() {
  * Open text chat
  */
 function openTextChat() {
-    const url = 'https://www.perplexity.ai/spaces/jacky-2-0-city-of-midland-tx-UNjkz8egR0uvRgHoYPf8Qw#0';
+    const url = 'https://www.perplexity.ai/spaces/Jett-2-0-city-of-Odessa-tx-UNjkz8egR0uvRgHoYPf8Qw#0';
     const width = 1200;
     const height = 800;
     const left = (window.screen.width / 2) - (width / 2);
     const top = (window.screen.height / 2) - (height / 2);
     const features = `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes,status=yes,toolbar=no,menubar=no,location=no`;
     
-    const popup = window.open(url, 'JackyTextChat', features);
+    const popup = window.open(url, 'JettTextChat', features);
     if (popup) {
         popup.focus();
         console.log('💬 Text chat popup opened');
@@ -1952,7 +1952,7 @@ window.addEventListener('beforeunload', () => {
 });
 
 // Export for debugging
-window.JackyApp = {
+window.JettApp = {
     state,
     startConversation,
     stopConversation,

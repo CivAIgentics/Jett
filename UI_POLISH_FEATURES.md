@@ -1,9 +1,9 @@
-# 🎨 UI Polish Features for Jacky 2.0
+# 🎨 UI Polish Features for Jett
 
 ## ✅ COMPLETED
 
 1. **Call Button Next to Send** - Green phone icon for voice conversations
-2. **Updated Footer** - "Powered by City of Midland AI Team"
+2. **Updated Footer** - "Powered by City of Odessa AI Team"
 
 ---
 
@@ -36,14 +36,14 @@
 - **Why:** Non-intrusive feedback for system events
 - **Effort:** 25 minutes
 - **Examples:**
-  - ✅ "Connected to Jacky"
+  - ✅ "Connected to Jett"
   - ❌ "Connection lost - Retrying..."
   - 📋 "Message copied to clipboard"
   - 🔇 "Microphone muted"
 
 #### 4. **Conversation Starter Suggestions**
 - **What:** Clickable suggestion chips before conversation starts
-- **Why:** Helps users know what Jacky can do
+- **Why:** Helps users know what Jett can do
 - **Effort:** 20 minutes
 - **Examples:**
   - 💧 "How do I pay my water bill?"

@@ -111,7 +111,7 @@
 1. Watch the avatar - badge shows red initially
 2. Start conversation - badge turns yellow (pulsing)
 3. Connection established - badge turns green
-4. When Jacky speaks - badge turns blue (pulsing)
+4. When Jett speaks - badge turns blue (pulsing)
 
 ### Message Actions
 1. Hover over any agent/user message

@@ -1,8 +1,8 @@
-# Jacky 2.0 Project Overview
+# Jett Project Overview
 
 ## Executive Summary
 
-**Jacky 2.0** is a cutting-edge AI-powered virtual assistant designed to enhance citizen engagement for the City of Midland, Texas. The application combines ANAM AI's lifelike avatar technology with ElevenLabs' advanced conversational AI to provide an intuitive, accessible interface for citizens to interact with city services through the midlandtexas.gov website.
+**Jett** is a cutting-edge AI-powered virtual assistant designed to enhance citizen engagement for the City of Odessa, Texas. The application combines ANAM AI's lifelike avatar technology with ElevenLabs' advanced conversational AI to provide an intuitive, accessible interface for citizens to interact with city services through the Odessatexas.gov website.
 
 ## Project Goals
 
@@ -10,7 +10,7 @@
 2. **Enhance User Experience**: Offer a modern, engaging way to interact with city services
 3. **Reduce Call Volume**: Answer common questions automatically
 4. **Increase Efficiency**: Free up staff time by handling routine inquiries
-5. **Modernize Services**: Position Midland as a forward-thinking smart city
+5. **Modernize Services**: Position Odessa as a forward-thinking smart city
 
 ## Technology Overview
 
@@ -68,7 +68,7 @@ COM-ANAM-ElevenLabs-Project/
 ## Key Features
 
 ### For Citizens
-- **Natural Conversations**: Speak naturally with Jacky using voice
+- **Natural Conversations**: Speak naturally with Jett using voice
 - **24/7 Availability**: Access information anytime, anywhere
 - **Multi-device Support**: Works on desktop, tablet, and mobile
 - **Privacy Focused**: Secure conversations with no data retention (configurable)
@@ -106,7 +106,7 @@ COM-ANAM-ElevenLabs-Project/
 
 ## Integration with CivicPlus
 
-The application is designed to seamlessly integrate with the existing midlandtexas.gov website:
+The application is designed to seamlessly integrate with the existing Odessatexas.gov website:
 
 - **iframe Embedding**: Simple HTML code snippet
 - **No CivicPlus Changes**: Works with current CMS
@@ -124,7 +124,7 @@ The application is designed to seamlessly integrate with the existing midlandtex
 - **Development**: ✅ Complete
 - **API Accounts**: ElevenLabs + ANAM AI subscriptions
 - **Server**: VPS or cloud hosting (2GB RAM minimum)
-- **Domain**: Subdomain for hosting (e.g., jacky.midlandtexas.gov)
+- **Domain**: Subdomain for hosting (e.g., Jett.Odessatexas.gov)
 - **SSL Certificate**: Free via Let's Encrypt
 
 ### Ongoing Costs (Estimated Monthly)
@@ -219,13 +219,13 @@ The application is designed to seamlessly integrate with the existing midlandtex
 
 ## Contact Information
 
-**Project Lead**: City of Midland IT Department
-**Technical Support**: itsupport@midlandtexas.gov
+**Project Lead**: City of Odessa IT Department
+**Technical Support**: itsupport@Odessatexas.gov
 **Documentation**: See README.md, QUICKSTART.md, DEPLOYMENT.md
 
 ## Conclusion
 
-Jacky 2.0 represents a significant step forward in citizen engagement technology for the City of Midland. The application is production-ready, fully documented, and designed for easy deployment and maintenance. With minimal ongoing costs and maximum impact on citizen satisfaction, this project positions Midland as a leader in smart city innovation.
+Jett represents a significant step forward in citizen engagement technology for the City of Odessa. The application is production-ready, fully documented, and designed for easy deployment and maintenance. With minimal ongoing costs and maximum impact on citizen satisfaction, this project positions Odessa as a leader in smart city innovation.
 
 ---
 

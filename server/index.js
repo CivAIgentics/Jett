@@ -7,7 +7,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { createServer } from 'http';
 import { WebSocketServer } from 'ws';
-import { ElevenLabsClient } from './services/elevenlabs.js';
 
 // Load environment variables
 dotenv.config();
@@ -42,9 +41,9 @@ app.use(helmet({
       styleSrc: ["'self'", "'unsafe-inline'", "https://*.anam.ai", "https://r2cdn.perplexity.ai"],
       imgSrc: ["'self'", "data:", "https:", "blob:"],
       fontSrc: ["'self'", "data:", "https://r2cdn.perplexity.ai", "https://fonts.gstatic.com", "https://fonts.googleapis.com"],
-      connectSrc: ["'self'", "https://api.elevenlabs.io", "wss://api.elevenlabs.io", "https://lab.anam.ai", "wss://lab.anam.ai", "https://web.anam.ai", "wss://web.anam.ai", "https://*.anam.ai", "wss://*.anam.ai"],
+      connectSrc: ["'self'", "https://lab.anam.ai", "wss://lab.anam.ai", "https://web.anam.ai", "wss://web.anam.ai", "https://*.anam.ai", "wss://*.anam.ai"],
       frameSrc: ["'self'", "https://lab.anam.ai", "https://web.anam.ai", "https://*.anam.ai"],
-      frameAncestors: ["'self'", "https://midlandtexas.gov", "https://*.midlandtexas.gov"],
+      frameAncestors: ["'self'", "https://odessa-tx.gov", "https://*.odessa-tx.gov", "https://ci.odessa.tx.us"],
       mediaSrc: ["'self'", "blob:", "https:", "data:"],
       workerSrc: ["'self'", "blob:"],
       childSrc: ["'self'", "blob:", "https://*.anam.ai"],
@@ -56,7 +55,7 @@ app.use(helmet({
 
 // Set X-Frame-Options to allow embedding in specific domains
 app.use((req, res, next) => {
-  res.setHeader('X-Frame-Options', 'ALLOW-FROM https://midlandtexas.gov');
+  res.setHeader('X-Frame-Options', 'ALLOW-FROM https://ci.odessa.tx.us');
   next();
 });
 
@@ -75,7 +74,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.get('/api/health', (req, res) => {
   res.json({ 
     status: 'healthy', 
-    service: 'Jacky 2.0',
+    service: 'Jett - City of Odessa AI Assistant',
     timestamp: new Date().toISOString() 
   });
 });
@@ -84,11 +83,9 @@ app.get('/api/health', (req, res) => {
 // Configuration endpoint
 app.get('/api/config', (req, res) => {
   res.json({
-    hasElevenLabsKey: !!process.env.ELEVENLABS_API_KEY,
-    hasElevenLabsAgentId: !!process.env.ELEVENLABS_AGENT_ID,
     hasAnamKey: !!process.env.ANAM_API_KEY,
     hasAnamPersonaId: !!process.env.ANAM_PERSONA_ID,
-    agentId: process.env.ELEVENLABS_AGENT_ID
+    personaId: process.env.ANAM_PERSONA_ID
   });
 });
 
@@ -97,40 +94,12 @@ app.get('/api/env-check', (req, res) => {
   res.json({
     hasAnamKey: !!process.env.ANAM_API_KEY,
     hasAnamPersonaId: !!process.env.ANAM_PERSONA_ID,
-    hasElevenLabsKey: !!process.env.ELEVENLABS_API_KEY,
-    hasElevenLabsAgentId: !!process.env.ELEVENLABS_AGENT_ID,
     nodeEnv: process.env.NODE_ENV || 'not set',
     anamPersonaId: process.env.ANAM_PERSONA_ID || 'not set'
   });
 });
 
-// ElevenLabs conversation session endpoint
-app.post('/api/conversation/start', async (req, res) => {
-  try {
-    console.log('=== Starting conversation request ===');
-    
-    const agentId = process.env.ELEVENLABS_AGENT_ID;
-    console.log('Using agent ID:', agentId);
-    
-    const elevenLabsClient = new ElevenLabsClient(process.env.ELEVENLABS_API_KEY);
-    const session = await elevenLabsClient.createConversation(agentId);
-    
-    console.log('Session created successfully');
-    
-    res.json({
-      success: true,
-      signedUrl: session.signed_url,
-      conversationId: session.conversation_id
-    });
-  } catch (error) {
-    console.error('❌ Error starting conversation:', error.message);
-    res.status(500).json({
-      success: false,
-      error: 'Failed to start conversation',
-      message: error.message
-    });
-  }
-});
+
 
 // ANAM session token creation endpoint
 app.post('/api/anam/session', async (req, res) => {
@@ -169,7 +138,7 @@ app.post('/api/anam/session', async (req, res) => {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            clientLabel: 'jacky-2.0-web-client'
+            clientLabel: 'jett-odessa-web-client'
           }),
           signal: controller.signal
         });
@@ -362,8 +331,8 @@ app.get('/api/proxy', async (req, res) => {
     
     // Security: Only allow specific domains
     const allowedDomains = [
-      'midlandtexas.gov',
-      'flymaf.com',
+      'odessa-tx.gov',
+      'ci.odessa.tx.us',
       'civicplus.com'
     ];
     
@@ -373,7 +342,7 @@ app.get('/api/proxy', async (req, res) => {
     if (!isAllowed) {
       return res.status(403).json({
         success: false,
-        error: 'Domain not allowed. Only midlandtexas.gov, flymaf.com, and civicplus.com URLs are allowed'
+        error: 'Domain not allowed. Only odessa-tx.gov, ci.odessa.tx.us, and civicplus.com URLs are allowed'
       });
     }
     
@@ -413,7 +382,7 @@ app.get('/api/proxy', async (req, res) => {
     const customStyles = `
     <style>
       body::before {
-        content: "Viewing via Jacky Assistant";
+        content: "Viewing via Jett Assistant";
         position: fixed;
         top: 0;
         left: 0;
@@ -503,8 +472,8 @@ app.use((err, req, res, next) => {
 
 // Start server
 server.listen(PORT, () => {
-  console.log(`🚀 Jacky 2.0 server running on port ${PORT}`);
-  console.log(`📍 City of Midland, Texas AI Agent`);
+  console.log(`🚀 Jett server running on port ${PORT}`);
+  console.log(`📍 City of Odessa, Texas AI Agent`);
   console.log(`🌐 Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`🔗 Access at: http://localhost:${PORT}`);
 });

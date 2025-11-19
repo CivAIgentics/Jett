@@ -2369,7 +2369,7 @@ function initDarkMode() {
     if (savedMode === 'enabled') {
         document.body.classList.add('dark-mode');
         if (icon) icon.textContent = '🌙';
-        if (logo) logo.src = '/icons/City of Odessa Logo (Dark Mode).png';
+        if (logo) logo.src = '/icons/City_of_Odessa,_Texas_logo.png';
         console.log('🌓 Restored dark mode from localStorage');
     }
     
@@ -2391,8 +2391,8 @@ function initDarkMode() {
         // Update logo
         if (logo) {
             logo.src = isDark 
-                ? '/icons/City of Odessa Logo (Dark Mode).png'
-                : '/icons/City of Odessa Logo.png';
+                ? '/icons/City_of_Odessa,_Texas_logo.png'
+                : '/icons/City_of_Odessa,_Texas_logo.png';
             console.log('🌓 Logo updated to:', logo.src);
         }
         
